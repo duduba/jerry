@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/publish_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/pub_list_dialog_item76_h"
+        android:layout_weight="1"
+        android:lines="1"
+        android:paddingLeft="@dimen/pad_30"
+        android:textSize="@dimen/text_size_24"
+        android:textColor="#ff5b5a5a"
+        android:gravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/btn_publish_item_delete"
+        android:layout_width="@dimen/pub_list_dialog_item_ImageView_w"
+        android:layout_height="fill_parent"
+        android:src="@drawable/pub_delete_info"
+        android:layout_marginRight="@dimen/new_list_item_pad14" />
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fff0f0f0">
+
+    <RelativeLayout 
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+		android:layout_height="@dimen/title_bar_height"
+		android:background="@drawable/title_bar"
+		android:layout_alignParentTop="true"
+		>
+        
+        <Button
+            android:id="@+id/back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/new_list_item_pad14"
+            android:background="@drawable/back_btn_selector"
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/new_info_pad10"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_24" />
+        
+	    <TextView 
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/title"
+			android:gravity="center"
+			android:textColor="#ffffffff"
+			android:text="杂色"
+			style="@style/title"
+			android:layout_centerInParent="true">
+		</TextView>
+
+	    <Button
+	        android:id="@+id/btn_more"
+	        android:layout_width="40dip"
+	        android:layout_height="40dip"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/btn_more_selector"
+	        android:layout_marginRight="9dip" />
+		
+	</RelativeLayout>
+
+	<FrameLayout
+	    android:id="@+id/new_info_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1" 
+	    android:background="#f0f0f0" >
+	    <include layout="@layout/zxtd_loading_view"/>
+	    <include layout="@layout/error"/>
+	</FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/new_info_poster_height"
+        android:background="@drawable/new_post_bg"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/new_info_pad8"
+        android:paddingLeft="@dimen/new_list_item_pad14"
+        android:paddingRight="@dimen/new_list_item_pad14"
+        android:paddingTop="@dimen/new_info_pad8"
+        android:id="@+id/new_post_edit" >
+
+        <LinearLayout
+            
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/post_edit_bg"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="22dip"
+                android:layout_height="22dip"
+                android:layout_marginLeft="@dimen/new_list_item_pad14"
+                android:src="@drawable/post_edit_icon" />
+
+            <TextView
+                android:id="@+id/new_edit_post"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/new_info_pad10"
+                android:gravity="center_vertical"
+                android:text="我来说几句"
+                android:textColor="#ffaeaeae"
+                android:textSize="@dimen/text_size_20" >
+            </TextView>
+        </LinearLayout>
+        <Button
+                android:id="@+id/btn_new_info_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/btn_1_selector"
+                android:minWidth="70dip"
+                android:textSize="16sp"
+                android:textColor="#ff5b5a5a"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:layout_marginLeft="9dip" />
+    </LinearLayout>
+
+</LinearLayout>

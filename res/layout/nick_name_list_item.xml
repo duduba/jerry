@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/pad_42"
+    android:paddingRight="@dimen/new_list_item_pad14" >
+
+    <ImageView
+        android:layout_width="@dimen/nick_name_list_item_add_icon_w"
+        android:layout_height="@dimen/nick_name_list_item_add_icon_w"
+        android:src="@drawable/nick_name_add" />
+
+    <TextView
+        android:id="@+id/nick_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/nick_name_list_item_name_text_h"
+        android:lines="1"
+        android:gravity="center_vertical"
+        android:textColor="#2d2d2d"
+        android:textSize="@dimen/text_size_26"
+        android:layout_marginLeft="@dimen/new_info_pad8"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/nick_name_delete"
+        android:layout_width="@dimen/nick_name_list_item_dele_icon_w"
+        android:layout_height="@dimen/nick_name_list_item_dele_icon_h"
+        android:src="@drawable/nick_delete_btn_selector" />
+	
+</LinearLayout>

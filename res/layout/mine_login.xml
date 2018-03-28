@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#F0F0F0"
+     >
+    
+    <include  
+         layout="@layout/title_bar_back" 
+         />
+    <ScrollView 
+		    android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:scrollbars="vertical"
+			android:id="@+id/scroll_layout"
+			android:layout_marginTop="0dp"
+			android:fadingEdge="none"
+	    >
+	    
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+            >
+            <LinearLayout 
+                android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dip"
+				android:layout_marginRight="20dip"
+				android:layout_marginTop="20dip"
+				android:orientation="horizontal"
+				android:gravity="center"
+                >
+                
+                <View 
+                    android:layout_width="wrap_content"
+					android:layout_height="1dip"
+					android:layout_weight="1"
+					android:background="@drawable/word_split_line"
+                    />
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="其他账号登录"
+					android:textColor="#2d2d2d"
+					android:layout_marginLeft="5dip"
+					android:layout_marginRight="5dip"
+					android:textSize="26sp"
+                    />
+                
+                   <View 
+                    android:layout_width="wrap_content"
+					android:layout_height="1dp"
+					android:layout_weight="1"
+					android:background="@drawable/word_split_line"
+                    />
+            </LinearLayout>
+            
+            <!-- qq,腾讯微博 -->
+            <LinearLayout 
+                android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dip"
+				android:layout_marginRight="10dip"
+				android:layout_marginTop="20dip"
+				android:orientation="horizontal"
+				android:gravity="center"
+                >
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:background="@drawable/mine_other_account_btn"
+					android:gravity="center"
+					android:layout_weight="1"
+					android:paddingTop="5dip"
+					android:paddingBottom="5dip"
+					android:id="@+id/sina_login_layout"
+                    >
+                    <ImageView 
+                        android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/mine_sina"
+                        />
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="新浪微博"
+						android:textColor="#2d2d2d"
+						android:textSize="18sp"
+					    android:layout_marginTop="5dip"
+                        />
+                    
+                </LinearLayout>
+                    <LinearLayout 
+	                    android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:background="@drawable/mine_other_account_btn"
+						android:gravity="center"
+						android:layout_weight="1"
+						android:layout_marginLeft="10dip"
+						android:paddingTop="5dip"
+						android:paddingBottom="5dip"
+						android:id="@+id/renren_login_layout"
+                    >
+                    <ImageView 
+                        android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/renren"
+                        />
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="人&#160;&#160;人&#160;&#160;网"
+						android:textColor="#2d2d2d"
+						android:textSize="18sp"
+					    android:layout_marginTop="5dip"
+                        />
+                    
+                </LinearLayout>
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:background="@drawable/mine_other_account_btn"
+					android:gravity="center"
+					android:layout_weight="1"
+					android:layout_marginLeft="10dip"
+					android:paddingTop="5dip"
+					android:paddingBottom="5dip"
+					android:id="@+id/qq_login_layout"
+                    >
+                    <ImageView 
+                        android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/mine_qq"
+                        />
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="&#160;腾讯QQ&#160;"
+						android:textColor="#2d2d2d"
+						android:textSize="18sp"
+					    android:layout_marginTop="5dip"
+                        />
+                    
+                </LinearLayout>
+                
+            </LinearLayout>
+            
+             <LinearLayout 
+                android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dip"
+				android:layout_marginRight="20dip"
+				android:layout_marginTop="20dip"
+				android:orientation="horizontal"
+				android:gravity="center"
+                >
+                
+                <View 
+                    android:layout_width="wrap_content"
+					android:layout_height="1dip"
+					android:layout_weight="1"
+					android:background="@drawable/word_split_line"
+                    />
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="杂色账号登录"
+					android:textColor="#2d2d2d"
+					android:textSize="26sp"
+					android:layout_marginLeft="5dip"
+					android:layout_marginRight="5dip"
+                    />
+                
+                   <View 
+                    android:layout_width="wrap_content"
+					android:layout_height="1dp"
+					android:layout_weight="1"
+					android:background="@drawable/word_split_line"
+                    />
+            </LinearLayout>
+            
+            
+               <LinearLayout 
+	            android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:background="@color/gray_dark"
+				android:paddingLeft="@dimen/margin_height_10"
+				android:paddingRight="@dimen/margin_height_10"
+				android:paddingBottom="15dp"
+				android:paddingTop="15dp"
+				android:id="@+id/login_input_layout"
+	            >
+            <AutoCompleteTextView 
+                android:layout_width="fill_parent"
+				android:layout_height="52dip"
+				android:hint="邮箱"
+				android:background="@drawable/input_bg"
+				android:inputType="textEmailAddress"
+				android:id="@+id/edit_email"
+				android:textColor="@color/black"
+				android:drawableLeft="@drawable/mail"
+				android:drawablePadding="6dip"
+				android:paddingLeft="6dip"
+				android:imeOptions="actionNext"
+                />
+            
+             <EditText 
+                android:layout_width="fill_parent"
+				android:layout_height="52dip"
+				android:hint="密码"
+				android:background="@drawable/input_bg"
+				android:password="true"
+				android:layout_marginTop="@dimen/margin_height_10"
+				android:id="@+id/edit_pwd"
+				android:drawableLeft="@drawable/password"
+				android:drawablePadding="6dip"
+				android:paddingLeft="6dip"
+				android:imeOptions="actionDone"
+                />
+            </LinearLayout>
+            
+               <Button 
+                   android:layout_width="fill_parent"
+				   android:layout_height="40dip"
+                   android:layout_marginLeft="@dimen/margin_height_10"
+                   android:layout_marginRight="@dimen/margin_height_10"
+                   android:layout_marginTop="15dp"
+                   android:text="登录"
+                   android:background="@drawable/mine_login_btn"
+                   android:textColor="@color/white"
+                   android:textSize="20sp"
+                   android:id="@+id/btn_login"
+                  />
+               
+                 <Button 
+                   android:layout_width="fill_parent"
+				   android:layout_height="40dip"
+                   android:layout_marginLeft="@dimen/margin_height_10"
+                   android:layout_marginRight="@dimen/margin_height_10"
+                   android:layout_marginTop="10dp"
+                   android:text="注册新账号"
+                   android:background="@drawable/mine_regist_btn"
+                   android:textColor="#767676"
+                   android:textSize="20sp"
+                   android:id="@+id/btn_regist"
+                  />
+                
+                 <RelativeLayout 
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginRight="@dimen/margin_height_10"
+                     >
+                     
+                     <TextView 
+                          android:layout_width="wrap_content"
+                     	  android:layout_height="wrap_content"
+                     	  android:text="忘记密码?"
+                     	  android:textSize="24sp"
+                     	  android:layout_marginTop="10dp"
+                     	  android:layout_alignParentRight="true"
+                     	  android:textColor="#5b5a5a"
+                     	  android:id="@+id/link_forgetpwd"
+                     	  android:linksClickable="true"
+                     	  android:autoLink="all"
+                         />
+                 </RelativeLayout>
+               
+        </LinearLayout>
+        
+        
+	 </ScrollView>
+</LinearLayout>

@@ -1,0 +1,18 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+ 	<ListView android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:id="@+id/city"
+			android:fadingEdge="none"
+			android:scrollingCache="false"
+			android:divider="#00ffffff"
+			android:dividerHeight="0dip"
+			android:layout_marginTop="0dp"
+			android:fastScrollEnabled="true"
+			android:cacheColorHint="#00000000"
+			>
+		</ListView>
+</RelativeLayout>

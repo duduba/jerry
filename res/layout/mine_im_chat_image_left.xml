@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+    >
+    
+    <include 
+         layout="@layout/mine_chat_message_time" 
+        />
+    
+<RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingLeft="10dp"
+	android:paddingRight="10dp"
+	android:paddingTop="10dp"
+	android:layout_gravity="bottom"
+	>
+	
+    <com.zxtd.information.ui.custview.RoundAngleImageView 
+        android:layout_width="40dip"
+    	android:layout_height="40dip"
+    	android:id="@+id/sender_icon"
+    	android:layout_alignParentLeft="true"
+    	android:scaleType="fitXY"
+    	android:layout_alignParentBottom="true"
+        />
+     
+     
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/chart_sender_textview"
+    	android:id="@+id/sender_msg"
+    	android:layout_toRightOf="@+id/sender_icon"
+    	android:gravity="bottom"
+    	android:orientation="horizontal"
+    	android:minWidth="90dip"
+        >
+        
+        <com.zxtd.information.ui.custview.RoundAngleImageView 
+             android:layout_width="fill_parent"
+    		 android:layout_height="fill_parent"
+    		 android:background="@drawable/mine_im_image_bg"
+    		 android:layout_gravity="left"
+    		 android:scaleType="fitXY"
+    		 android:id="@+id/sender_image"
+            />
+        
+       </LinearLayout>
+ 
+</RelativeLayout>	
+
+</LinearLayout>

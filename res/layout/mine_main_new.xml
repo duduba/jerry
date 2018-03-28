@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/mine_bg_color"
+     >
+    
+    <include  
+         layout="@layout/title_bar" 
+         />
+      
+    	<com.zxtd.information.ui.custview.CustomerScrollView 
+		    android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:scrollbars="vertical"
+			android:id="@+id/scroll_layout"
+			android:layout_marginTop="0dp"
+			android:fadingEdge="none"
+	    >
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+        	android:layout_height="wrap_content" 
+        	android:orientation="vertical"
+	        >
+	          <RelativeLayout 
+		        android:layout_width="fill_parent"
+	        	android:layout_height="500dip" 
+	        	android:background="@drawable/self_home_page5"
+	        	android:layout_marginTop="-320dip"
+		        >
+		        	 
+		      	     <LinearLayout
+		      	         android:id="@+id/mine_topInfo_layout"
+		      	         android:layout_width="fill_parent"
+		      	         android:layout_height="135dip"
+		      	         android:layout_above="@+id/mine_bottom_layout"
+		      	         android:layout_marginLeft="@dimen/margin_height_10"
+		      	         android:layout_marginRight="@dimen/margin_height_10"
+		      	         android:orientation="horizontal"
+		      	         android:layout_centerVertical="true"
+		      	         android:gravity="center_vertical"
+		      	          >
+	                  
+	                      
+	                      <LinearLayout 
+	                           android:layout_width="wrap_content"
+		      	         	   android:layout_height="wrap_content"
+		      	               android:orientation="horizontal"
+	                          >
+	                          <LinearLayout 
+	                              android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:orientation="vertical"
+		                          android:background="@drawable/mine_ablum_bg"
+	                              >
+	                               <com.zxtd.information.ui.custview.RoundAngleImageView
+			                          android:layout_width="75dip"
+			                          android:layout_height="75dip"
+			                          android:src="@drawable/mine_user_logo"
+			                          android:scaleType="fitXY"
+			                          android:id="@+id/mine_self_header"
+	                           		/>
+	                          </LinearLayout>
+	                         
+	                      <RelativeLayout 
+	                          android:layout_width="wrap_content"
+	                          android:layout_height="wrap_content"
+	                          android:layout_marginLeft="10dip"
+	                          android:layout_marginTop="10dip"
+	                          android:layout_marginBottom="10dip"
+	                          >
+	                          <RelativeLayout 
+	                               android:layout_width="wrap_content"
+	                          	   android:layout_height="wrap_content"
+	                          	   android:orientation="horizontal"
+	                          	   android:layout_alignParentTop="true"
+	                          	   android:id="@+id/mine_word_layout"
+	                              >
+	                              <LinearLayout
+	                               android:layout_width="fill_parent"
+	                          	   android:layout_height="wrap_content"
+	                          	   android:orientation="horizontal"
+	                          	   android:layout_toLeftOf="@+id/mine_main_modify"
+	                          	   android:layout_marginLeft="3dip"
+	                          	   android:gravity="left"
+	                                   >
+	                              <TextView 
+	                                  android:layout_width="wrap_content"
+	                          	      android:layout_height="wrap_content"
+	                          	      android:text=""
+	                          	      style="@style/mine_title"
+	                          	      android:id="@+id/mine_self_nickName"
+	                          	      android:singleLine="true"
+	                          	      android:layout_marginRight="5dip"
+	                                  />
+	                              
+	                              <ImageView 
+	                                  android:layout_width="25dip"
+	                          	      android:layout_height="25dip"
+	                          	      android:id="@+id/mine_self_accountype"
+	                          	      android:layout_marginLeft="5dip"
+	                                  />
+	                              </LinearLayout>
+	                               
+	                              <Button 
+	                                  android:layout_width="wrap_content"
+	                          	      android:layout_height="wrap_content"
+	                          	      android:text="修改资料"
+	                          	      android:background="@drawable/mine_btn_modify"
+	                          	      android:layout_alignParentRight="true"
+	                          	      android:paddingLeft="6dp"
+	                          	      android:paddingRight="6dp"
+	                          	      android:id="@+id/mine_main_modify"
+	                          	      android:paddingTop="3dip"
+	                          	      android:paddingBottom="3dip"
+	                                  />
+	                              
+	                               <!--
+	                              <ImageView 
+	                                  android:layout_width="wrap_content"
+	                          	      android:layout_height="wrap_content" 
+	                                  android:layout_alignParentRight="true"
+	                          	      android:paddingLeft="5dp"
+	                          	      android:paddingRight="5dp"
+	                          	      android:id="@+id/mine_main_modify"
+	                          	      android:src="@drawable/user_set"
+	                                  />
+	                              -->
+	                          </RelativeLayout>
+	                          
+	                          <TextView 
+	                              android:layout_width="wrap_content"
+	                          	  android:layout_height="wrap_content"
+	                          	  android:text=""
+	                          	  style="@style/mine_description"
+	                          	  android:layout_below="@+id/mine_word_layout"
+	                          	  android:layout_marginTop="10dip"
+	                          	  android:id="@+id/mine_self_sign"
+	                          	  android:maxLines="2"
+	                          	  android:ellipsize="end"
+	                              />
+	                      </RelativeLayout>
+	                          
+	                      </LinearLayout>
+	                
+	                  
+	              </LinearLayout>
+
+	              
+	              <LinearLayout 
+	                   android:layout_width="fill_parent"
+	        		   android:layout_height="45dip" 
+	        		   android:orientation="horizontal"
+	        		   android:id="@+id/mine_bottom_layout"
+	        		   android:layout_alignParentBottom="true"
+	        		  
+	                  >
+	                  <LinearLayout 
+	                        android:layout_width="wrap_content"
+	        		   		android:layout_height="wrap_content" 
+	        		   		android:orientation="horizontal"
+	        		   		android:layout_weight="1"
+	        		   		android:background="@drawable/mine_fans"
+	        		   		android:gravity="center"
+	        		   		android:id="@+id/mine_main_fans"
+	                      >
+	                     
+	                     <TextView 
+	                           android:layout_width="wrap_content"
+	        		   		   android:layout_height="wrap_content" 
+	        		   		   android:text="粉丝"
+	        		   		   style="@style/mine_word"
+	                          />
+	                     <TextView 
+	                           android:layout_width="wrap_content"
+	        		   		   android:layout_height="wrap_content" 
+	        		   		   android:text="0"
+	        		   		   style="@style/mine_word"
+	        		   		   android:layout_marginLeft="8dp"
+	        		   		   android:id="@+id/mine_self_fanscount"
+	                          />
+	                     <ImageView 
+	                         android:layout_width="wrap_content"
+	        		   		 android:layout_height="wrap_content"
+	        		   		 android:layout_marginLeft="5dp" 
+	        		   		 android:src="@drawable/redpoint"
+	        		   		 android:id="@+id/mine_self_fanscounthasnew"
+	        		   		 android:visibility="gone"
+	                         />
+	                  </LinearLayout>
+	                  
+	                   <LinearLayout 
+	                        android:layout_width="wrap_content"
+	        		   		android:layout_height="wrap_content" 
+	        		   		android:orientation="horizontal"
+	        		   		android:layout_weight="1"
+	        		   		android:background="@drawable/mine_fans"
+	        		   		android:gravity="center"
+	        		   		android:id="@+id/mine_main_focus"
+	        		   		android:layout_marginRight="-2dip"
+	                      >
+	                      <TextView 
+	                           android:layout_width="wrap_content"
+	        		   		   android:layout_height="wrap_content" 
+	        		   		   android:text="关注"
+	        		   		   style="@style/mine_word"
+	                          />
+	                       <TextView 
+	                           android:layout_width="wrap_content"
+	        		   		   android:layout_height="wrap_content" 
+	        		   		   android:text="0"
+	        		   		   style="@style/mine_word"
+	        		   		   android:layout_marginLeft="8dp"
+	        		   		   android:id="@+id/mine_self_focuscount"
+	                          />
+	                       <ImageView 
+	                         android:layout_width="wrap_content"
+	        		   		 android:layout_height="wrap_content"
+	        		   		 android:layout_marginLeft="5dp" 
+	        		   		 android:src="@drawable/redpoint"
+	        		   		 android:id="@+id/mine_self_focushasnew"
+	        		   		 android:visibility="gone"
+	                         />
+	                  </LinearLayout>
+	              </LinearLayout>
+
+	         
+
+	        </RelativeLayout>
+	        
+	          
+	          
+	          <!--个人资料信息  -->
+	          <RelativeLayout 
+	              android:layout_width="fill_parent"
+	              android:layout_height="wrap_content"
+	              android:layout_marginLeft="@dimen/margin_height_10"
+	              android:layout_marginRight="@dimen/margin_height_10"
+	              android:layout_marginTop="@dimen/margin_height_10"
+	              >
+	              <LinearLayout 
+	                  android:layout_width="wrap_content"
+	                  android:layout_height="wrap_content"
+	                  android:orientation="vertical"
+	                  android:layout_alignParentLeft="true"
+	                  >
+	                   <!-- 居住地-->
+	                   <LinearLayout 
+		                  android:layout_width="wrap_content"
+		                  android:layout_height="wrap_content"
+		                  android:orientation="horizontal"
+	                  >
+	                  <ImageView 
+	                      android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"
+	                      android:src="@drawable/mine_info_home"
+	                      />
+	                  
+	                  <TextView 
+	                           android:layout_width="wrap_content"
+	        		   		   android:layout_height="wrap_content" 
+	        		   		   android:text="所在地:"
+	        		   		   style="@style/mine_info"
+	        		   		   android:layout_marginLeft="8dp"
+	                          />
+	                  
+	                  <TextView 
+	                           android:layout_width="wrap_content"
+	        		   		   android:layout_height="wrap_content" 
+	        		   		   android:text=""
+	        		   		   style="@style/mine_info"
+	        		   		   android:layout_marginLeft="5dp"
+	        		   		   android:id="@+id/mine_self_location"
+	                          />
+	              </LinearLayout>
+	              
+	              <!--性别  -->
+	              <LinearLayout 
+	                  android:layout_width="wrap_content"
+	                  android:layout_height="wrap_content"
+	                  android:orientation="horizontal"
+	                 android:layout_marginTop="@dimen/margin_height_10"
+	                  >
+	                  <ImageView 
+	                      android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"
+	                      android:src="@drawable/mine_info_sex"
+	                      />
+	                  
+	                  <TextView 
+	                           android:layout_width="wrap_content"
+	        		   		   android:layout_height="wrap_content" 
+	        		   		   android:text="性别:"
+	        		   		   style="@style/mine_info"
+	        		   		   android:layout_marginLeft="8dp"
+	                          />
+	                  
+	                  <TextView 
+	                           android:layout_width="wrap_content"
+	        		   		   android:layout_height="wrap_content" 
+	        		   		   android:text=""
+	        		   		   style="@style/mine_info"
+	        		   		   android:layout_marginLeft="5dp"
+	        		   		   android:id="@+id/mine_self_sex"
+	                          />
+	              </LinearLayout>
+	                   
+	        
+	              </LinearLayout>
+	              
+	              
+	                   <!-- 第二列 -->
+	              <LinearLayout 
+	                   android:layout_width="wrap_content"
+	                  android:layout_height="wrap_content"
+	                  android:orientation="vertical"
+	                  android:layout_alignParentRight="true"
+	                  android:layout_gravity="left"
+	                  android:gravity="left"
+	                  >
+	                   
+	                    <!-- 职业 -->
+	                  <LinearLayout 
+	                  android:layout_width="wrap_content"
+	                  android:layout_height="wrap_content"
+	                  android:orientation="horizontal"
+	                  android:gravity="left"
+	                  >
+	                  <ImageView 
+	                      android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"
+	                      android:src="@drawable/mine_info_job"
+	                      />
+	                  
+	                  <TextView 
+	                           android:layout_width="wrap_content"
+	        		   		   android:layout_height="wrap_content" 
+	        		   		   android:text="职业:"
+	        		   		   style="@style/mine_info"
+	        		   		   android:layout_marginLeft="8dp"
+	                          />
+	                  
+	                  <TextView 
+	                           android:layout_width="wrap_content"
+	        		   		   android:layout_height="wrap_content" 
+	        		   		   android:text=""
+	        		   		   style="@style/mine_info"
+	        		   		   android:layout_marginLeft="5dp"
+	        		   		   android:id="@+id/mine_self_work"
+	                          />
+	              </LinearLayout>
+	                  
+	         
+	         
+	                  
+	               <!-- 年龄 -->   
+	               <LinearLayout 
+	                  android:layout_width="wrap_content"
+	                  android:layout_height="wrap_content"
+	                  android:orientation="horizontal"
+	                  android:gravity="left"
+	                  android:layout_marginTop="@dimen/margin_height_10"
+	                  >
+	                  <ImageView 
+	                      android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"
+	                      android:src="@drawable/mine_info_age"
+	                      />
+	                  
+	                  <TextView 
+	                           android:layout_width="wrap_content"
+	        		   		   android:layout_height="wrap_content" 
+	        		   		   android:text="年龄:"
+	        		   		   style="@style/mine_info"
+	        		   		   android:layout_marginLeft="8dp"
+	                          />
+	                  
+	                  <TextView 
+	                           android:layout_width="wrap_content"
+	        		   		   android:layout_height="wrap_content" 
+	        		   		   android:text=""
+	        		   		   style="@style/mine_info"
+	        		   		   android:layout_marginLeft="5dp"
+	        		   		   android:id="@+id/mine_self_age"
+	                          />
+	              </LinearLayout>
+	                  
+	              </LinearLayout>
+	          </RelativeLayout>
+	          
+	
+	        
+	          <!-- 
+	          	          <ImageView android:background="@drawable/card_splitline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />	          
+	          
+	           -->
+	           
+	           <View 
+	               android:layout_width="fill_parent" 
+	               android:layout_height="wrap_content" 
+	               android:background="@drawable/hor_splitline"
+	               android:layout_marginTop="@dimen/margin_height_10"
+	               />
+	          
+	       <LinearLayout 
+	    	    android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="@dimen/margin_height_10"
+    	    >
+    	    <com.zxtd.information.ui.custview.AlignLeftGallery 
+    	         android:layout_width="1000dp"
+            	 android:layout_height="wrap_content"
+            	 android:id="@+id/myGallery"
+            	 android:fadingEdgeLength="0dip"
+            	 android:layout_marginLeft="10dip"
+    	        />
+    	    
+    	</LinearLayout>
+    	
+	     <View 
+	         android:layout_width="fill_parent" 
+	         android:layout_height="wrap_content" 
+	         android:background="@drawable/hor_splitline"
+	         android:layout_marginTop="@dimen/margin_height_10"
+	         android:visibility="gone"
+	     />
+	           
+	      
+	     <LinearLayout 
+	         android:layout_width="fill_parent" 
+	         android:layout_height="80dip" 
+	         android:orientation="horizontal"
+	         android:layout_marginTop="@dimen/margin_height_10"
+	        
+	         >
+	         <LinearLayout 
+		         android:layout_width="wrap_content" 
+		         android:layout_height="fill_parent"
+		         android:orientation="vertical"
+		         android:layout_weight="1"
+		    	 android:background="@drawable/mine_optbtn"
+		    	 android:gravity="center"
+		    	 android:id="@+id/mine_main_mypublic"
+	         >
+	             <LinearLayout 
+	                 android:layout_width="fill_parent" 
+		         	 android:layout_height="wrap_content" 
+		         	 android:orientation="horizontal"
+		         	 android:gravity="center"
+		         	
+	                 >
+	                <TextView 
+		                android:layout_width="wrap_content" 
+			         	android:layout_height="wrap_content" 
+			         	android:text="我的发布"
+			         	style="@style/mine_word"
+		              />
+	                  <ImageView 
+	                         android:layout_width="wrap_content"
+	        		   		 android:layout_height="wrap_content"
+	        		   		 android:layout_marginLeft="5dp" 
+	        		   		 android:src="@drawable/redpoint"
+	        		   		 android:id="@+id/mine_self_hasnewpublic"
+	        		   		 android:visibility="gone"
+	                         />
+	             </LinearLayout>
+	             
+	              <TextView 
+		                android:layout_width="120dip" 
+			         	android:layout_height="wrap_content" 
+			         	android:text="0"
+			         	style="@style/mine_word"
+			         	android:id="@+id/mine_self_publiccount"
+			         	android:gravity="center"
+			         	android:layout_gravity="center"
+		              />
+	            
+	             
+	         </LinearLayout>
+	         	
+	          <View 
+		         android:layout_width="1dp" 
+		         android:layout_height="wrap_content" 
+		         android:background="@drawable/vertical_split_line"
+		     />
+	         
+	         <LinearLayout 
+		         android:layout_width="wrap_content" 
+		         android:layout_height="fill_parent" 
+		         android:orientation="vertical"
+		         android:layout_weight="1"
+		    	 android:background="@drawable/mine_optbtn"
+		    	 android:gravity="center"
+		    	 android:id="@+id/mine_main_mycomment"
+	         >
+	             <LinearLayout 
+	                 android:layout_width="fill_parent" 
+		         	 android:layout_height="wrap_content" 
+		         	 android:orientation="horizontal"
+		         	 android:gravity="center"
+	                 >
+	                <TextView 
+		                android:layout_width="wrap_content" 
+			         	android:layout_height="wrap_content" 
+			         	android:text="我的评论"
+			         	style="@style/mine_word"
+		              />
+	                  <ImageView 
+	                         android:layout_width="wrap_content"
+	        		   		 android:layout_height="wrap_content"
+	        		   		 android:layout_marginLeft="5dp" 
+	        		   		 android:src="@drawable/redpoint"
+	        		   		 android:id="@+id/mine_self_hasnewcomment"
+	        		   		 android:visibility="gone"
+	                         />
+	             </LinearLayout>
+	             
+	              <TextView 
+		                android:layout_width="120dip" 
+			         	android:layout_height="wrap_content" 
+			         	android:text="0"
+			         	style="@style/mine_word"
+			         	android:id="@+id/mine_self_commentcount"
+			         	android:gravity="center"
+			         	android:layout_gravity="center"
+		              />
+	            
+	             
+	         </LinearLayout>
+	         
+	     </LinearLayout>
+	    
+	      
+	  <LinearLayout 
+	         android:layout_width="fill_parent" 
+	         android:layout_height="80dip" 
+	         android:orientation="horizontal"
+	         >
+	         <LinearLayout 
+		         android:layout_width="wrap_content" 
+		         android:layout_height="fill_parent"
+		         android:orientation="vertical"
+		         android:layout_weight="1"
+		    	 android:background="@drawable/mine_optbtn"
+		    	 android:gravity="center"
+		    	 android:id="@+id/mine_main_mycollection"
+	         >
+	             <LinearLayout 
+	                 android:layout_width="fill_parent" 
+		         	 android:layout_height="wrap_content" 
+		         	 android:orientation="horizontal"
+		         	 android:gravity="center"
+	                 >
+	                <TextView 
+		                android:layout_width="wrap_content" 
+			         	android:layout_height="wrap_content" 
+			         	android:text="我的收藏"
+			         	style="@style/mine_word"
+		              />
+	                  <ImageView 
+	                         android:layout_width="wrap_content"
+	        		   		 android:layout_height="wrap_content"
+	        		   		 android:layout_marginLeft="5dp" 
+	        		   		 android:src="@drawable/redpoint"
+	        		   		 android:id="@+id/mine_self_hasnewcollection"
+	        		   		 android:visibility="gone"
+	                         />
+	             </LinearLayout>
+	             
+	              <TextView 
+		                android:layout_width="120dip" 
+			         	android:layout_height="wrap_content" 
+			         	android:text="0"
+			         	style="@style/mine_word"
+			         	android:id="@+id/mine_self_collectioncount"
+			         	android:gravity="center"
+			         	android:layout_gravity="center"
+		              />
+	            
+	             
+	         </LinearLayout>
+	         	
+	          <View 
+		         android:layout_width="1dp" 
+		         android:layout_height="wrap_content" 
+		         android:background="@drawable/vertical_split_line"
+		     />
+	         
+	         <LinearLayout 
+		         android:layout_width="wrap_content" 
+		         android:layout_height="fill_parent" 
+		         android:orientation="vertical"
+		         android:layout_weight="1"
+		    	 android:background="@drawable/mine_optbtn"
+		    	 android:gravity="center"
+		    	 android:id="@+id/mine_main_myletter"
+	         >
+	             <LinearLayout 
+	                 android:layout_width="fill_parent" 
+		         	 android:layout_height="wrap_content" 
+		         	 android:orientation="horizontal"
+		         	 android:gravity="center"
+	                 >
+	                <TextView 
+		                android:layout_width="wrap_content" 
+			         	android:layout_height="wrap_content" 
+			         	android:text="我的私信"
+			         	style="@style/mine_word"
+		              />
+	                  <ImageView 
+	                         android:layout_width="wrap_content"
+	        		   		 android:layout_height="wrap_content"
+	        		   		 android:layout_marginLeft="5dp" 
+	        		   		 android:src="@drawable/redpoint"
+	        		   		 android:id="@+id/mine_self_hasnewim"
+	        		   		 android:visibility="gone"
+	                         />
+	             </LinearLayout>
+	             
+	              <TextView 
+		                android:layout_width="120dip" 
+			         	android:layout_height="wrap_content" 
+			         	android:text="0"
+			         	style="@style/mine_word"
+			         	android:id="@+id/mine_self_immsgcount"
+			         	android:gravity="center"
+			         	android:layout_gravity="center"
+		              />
+	            
+	             
+	         </LinearLayout>
+	         
+	     </LinearLayout> 
+	      
+	      
+	     
+	     
+	     </LinearLayout>
+	   </com.zxtd.information.ui.custview.CustomerScrollView>
+	</LinearLayout>   

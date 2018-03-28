@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/pub_show_picture_bg" >
+
+    <ImageView
+        android:id="@+id/publist_image_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/show_pictrue_dialog_linearlayout_h"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/pad_16"
+        android:paddingRight="@dimen/pad_16"
+        android:paddingTop="@dimen/pad_10"
+        android:paddingBottom="@dimen/pad_10" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_24"
+            android:background="@drawable/btn_show_pic_selector" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="确定" 
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_24"
+            android:background="@drawable/btn_show_pic_selector"
+            android:layout_marginLeft="@dimen/pad_16" />
+
+    </LinearLayout>
+
+</RelativeLayout>

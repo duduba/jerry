@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zxtd.information.view.KeyboardListenLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical"
+    android:id="@+id/keyboard_linear_layout"
+    android:paddingBottom="@dimen/pad_69" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_height_x"
+        android:background="@drawable/title_bar" >
+
+        <Button
+            android:id="@+id/btn_post_list_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/new_list_item_pad14"
+            android:background="@drawable/back_btn_selector"
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/new_info_pad10"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="评论"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_36" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.zxtd.information.view.PostPullToRefreshView
+            android:id="@+id/pull_to_refresh_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+        </com.zxtd.information.view.PostPullToRefreshView>
+		<LinearLayout 
+            android:id="@+id/is_empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无评论..."
+                android:textSize="@dimen/text_size_24"
+                android:textColor="#ff6f6e6e"/>
+        </LinearLayout>
+        <include layout="@layout/zxtd_loading_view" />
+        <include layout="@layout/error"/>
+    </FrameLayout>
+</com.zxtd.information.view.KeyboardListenLinearLayout>

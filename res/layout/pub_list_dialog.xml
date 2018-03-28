@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/pad_10"
+    android:paddingRight="@dimen/pad_10" >
+
+    <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/title_bar_height_x"
+                android:background="@drawable/pub_dialog_title" >
+
+                <Button
+                    android:id="@+id/btn_pub_list_dialog_dismiss"
+                    android:layout_width="@dimen/new_info_btn_width"
+		            android:layout_height="@dimen/new_info_btn_height"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="@dimen/new_list_item_pad14"
+		            android:background="@drawable/back_btn_selector"
+		            android:gravity="right|center_vertical"
+		            android:paddingRight="@dimen/new_info_pad10"
+		            android:text="返回"
+		            android:textColor="#fff"
+		            android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/text_size_26"
+                    android:text="草稿箱"/>
+
+                <Button
+                    android:id="@+id/btn_publish_editable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/new_info_btn_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/new_info_pad8"
+                    android:background="@drawable/comment_btn_selector"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/pad_15"
+                    android:paddingRight="@dimen/pad_15"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/text_size_24"
+                    android:text="编辑" />
+            </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/pub_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/pub_dialog_body"
+            android:divider="@drawable/nick_name_list_divider"
+            android:dividerHeight="1.3dip" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/has_no_publish_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000"
+            android:visibility="gone"
+            android:text="暂无草稿" />
+
+    </FrameLayout>
+
+</LinearLayout>

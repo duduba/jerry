@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:background="@drawable/setting_bg_type">
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_height_x"
+        android:background="@drawable/title_bar" >
+        <Button
+            android:id="@+id/about_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/new_list_item_pad14"
+            android:background="@drawable/back_btn_selector"
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/new_info_pad10"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_24" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="关于"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_36" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/about_view_LinearLayout_w"
+        android:layout_marginTop="@dimen/pad_54"
+        android:layout_height="@dimen/about_view_LinearLayout_h"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/about_icon"
+            android:layout_marginTop="@dimen/pad_50"
+            android:layout_marginBottom="@dimen/pad_20" />
+
+        <TextView
+            android:id="@+id/about_version_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5b5a5a"
+            android:textSize="@dimen/text_size_20" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="客服电话：0755-33980182"
+        android:textColor="#2d2d2d"
+        android:textSize="@dimen/text_size_24"
+        android:layout_marginBottom="@dimen/pad_26"  />
+    <TextView
+        android:textColor="#5a5b5b"
+        android:textSize="@dimen/text_size_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="北京中讯腾达科技有限公司    版权所有"
+        android:layout_marginBottom="@dimen/pad_26" />
+</LinearLayout>

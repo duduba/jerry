@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/line_to_other_main"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <com.zxtd.information.ui.custview.RoundAngleImageView
+                android:id="@+id/mine_self_header"
+                android:layout_width="27dip"
+                android:layout_height="27dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/mine_user_logo" />
+
+            <TextView
+                android:id="@+id/comment_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:lines="1"
+                android:text="昵称"
+                android:textColor="#0080e5"
+                android:textSize="@dimen/text_size_20" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5b5a5a"
+            android:textSize="@dimen/text_size_20" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/comment_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dip"
+        android:text="内容"
+        android:textColor="#2d2d2d"
+        android:textSize="@dimen/text_size_24" />
+
+    <TextView
+        android:id="@+id/orig_comment_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#5b5a5a"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/orig_news_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#5b5a5a"
+        android:textSize="14sp" />
+
+</LinearLayout>

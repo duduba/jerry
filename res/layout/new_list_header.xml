@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <com.zxtd.information.view.NewViewPager
+        android:id="@+id/new_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/new_list_header_height"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <LinearLayout
+        android:id="@+id/new_head_buttom"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/new_list_header_title_height"
+        android:layout_alignBottom="@id/new_header"
+        android:background="@drawable/new_head_title_bg"
+        android:orientation="horizontal" 
+        android:paddingLeft="@dimen/new_list_header_title_pad_left"
+        android:paddingRight="@dimen/new_list_header_title_pad_right"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/new_head_title"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="@dimen/new_list_header_title_text_size"
+            android:layout_weight="1"
+            android:lines="1"/>
+
+        <com.zxtd.information.view.PageSelectView
+            android:id="@+id/page_select"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
+    
+    <include  
+         layout="@layout/title_bar_back" 
+         />
+    <ScrollView 
+		    android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:scrollbars="vertical"
+			android:scrollbarStyle="outsideOverlay"
+			android:scrollbarSize="0dp"
+			android:id="@+id/scroll_layout"
+			android:layout_marginTop="0dp"
+			android:fadingEdge="none"
+	    >
+	    
+         <LinearLayout 
+            android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			
+            >
+            <LinearLayout 
+                android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dip"
+				android:layout_marginRight="20dip"
+				android:layout_marginTop="20dip"
+				android:orientation="horizontal"
+				android:gravity="center"
+                >
+                
+                <View 
+                    android:layout_width="wrap_content"
+					android:layout_height="1dip"
+					android:layout_weight="1"
+					android:background="@drawable/word_split_line"
+                    />
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="请填写下面的资料"
+					style="@style/mine_title"
+					android:textColor="#565656"
+					android:layout_marginLeft="5dip"
+					android:layout_marginRight="5dip"
+                    />
+                
+                   <View 
+                    android:layout_width="wrap_content"
+					android:layout_height="1dp"
+					android:layout_weight="1"
+					android:background="@drawable/word_split_line"
+                    />
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/margin_height_10"
+				android:layout_marginRight="@dimen/margin_height_10"
+				android:orientation="vertical"
+                >
+            
+                <AutoCompleteTextView 
+	                android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="邮箱"
+					android:background="@drawable/edittext_bg_normal"
+					android:inputType="textEmailAddress"
+					android:id="@+id/edit_regist_email"
+					android:layout_marginTop="@dimen/margin_height_10"
+					android:textColor="@color/black"
+					android:imeOptions="actionNext"
+                />
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="请填写真实的邮箱(找回密码使用)"
+					style="@style/mine_title"
+					android:textColor="#565656"
+					android:layout_marginLeft="5dip"
+					android:layout_marginRight="5dip"
+					android:layout_marginTop="@dimen/margin_height_10"
+                    />
+            
+                 <EditText 
+	                android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="昵称,4-24个中英文字符"
+					android:background="@drawable/edittext_bg_normal"
+					android:inputType="text"
+					android:id="@+id/edit_regist_nickname"
+					android:layout_marginTop="@dimen/margin_height_10"
+					android:imeOptions="actionNext"
+                />
+                 
+                  <EditText 
+	                android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="密码,不少于6个字符,区分大小写"
+					android:background="@drawable/edittext_bg_normal"
+					android:inputType="textPassword"
+					android:id="@+id/edit_regist_password"
+					android:layout_marginTop="@dimen/margin_height_10"
+					android:imeOptions="actionNext"
+                />
+                  
+                 <EditText 
+	                android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="再次输入密码"
+					android:background="@drawable/edittext_bg_normal"
+					android:inputType="textPassword"
+					android:id="@+id/edit_regist_repassword"
+					android:layout_marginTop="@dimen/margin_height_10"
+					android:imeOptions="actionDone"
+                />
+                 
+                  <Button 
+	                   android:layout_width="fill_parent"
+					   android:layout_height="40dip"
+	                   android:layout_marginTop="15dp"
+	                   android:text="立即注册"
+	                   android:background="@drawable/mine_login_btn"
+	                   android:textColor="@color/white"
+	                   android:textSize="15sp"
+	                   android:id="@+id/btn_regist"
+                  />
+                  
+              </LinearLayout>   
+            
+       </LinearLayout>
+            
+        
+	 </ScrollView>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+
+    <Button
+        android:id="@+id/btn_clear_all_nick_name"
+        android:layout_width="@dimen/nick_name_list_footer_btn_w"
+        android:layout_height="@dimen/nick_name_list_footer_btn_h"
+        android:text="清空昵称历史记录"
+        android:textColor="#2b2b2b"
+        android:background="@drawable/btn_selector"
+        android:textSize="@dimen/text_size_26"
+        android:layout_marginTop="@dimen/pad_24"
+        android:visibility="gone" />
+
+</LinearLayout>

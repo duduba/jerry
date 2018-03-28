@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+    >
+    
+    <include 
+         layout="@layout/mine_chat_message_time" 
+        />
+    
+<RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingLeft="10dp"
+	android:paddingRight="10dp"
+	android:paddingTop="10dp"
+	android:layout_gravity="bottom"
+	>
+	
+    <TextView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/chart_self_textview"
+    	android:layout_toLeftOf="@+id/self_icon"
+    	android:id="@+id/self_msg"
+    	style="@style/word"
+    	android:gravity="bottom"
+        />
+
+    <com.zxtd.information.ui.custview.RoundAngleImageView 
+        android:layout_width="40dip"
+    	android:layout_height="40dip"
+    	android:id="@+id/self_icon"
+    	android:layout_alignParentRight="true"
+    	android:scaleType="fitXY"
+    	android:layout_alignParentBottom="true"
+        />
+    
+	</RelativeLayout>
+	
+</LinearLayout>

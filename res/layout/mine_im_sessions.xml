@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+
+     >
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+		android:layout_height="@dimen/title_bar_height"
+		android:background="@drawable/title_bar"
+		>
+        
+        <Button
+            android:id="@+id/back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/new_list_item_pad14"
+            android:background="@drawable/back_btn_selector"
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/new_info_pad10"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_24" />
+        
+	    <TextView 
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/title"
+			android:gravity="center"
+			android:textColor="#ffffffff"
+			style="@style/title"
+			android:layout_centerInParent="true"
+			android:text="私信列表"
+			>
+		</TextView>
+
+	   
+	     <Button
+            android:id="@+id/write"
+            android:layout_width="80dip"
+            android:layout_height="@dimen/new_info_btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/new_list_item_pad14"
+            android:background="@drawable/comment_btn_selector"
+            android:text="通讯录"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_24" />
+		
+	</RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+        >
+    
+        <!--com.zxtd.information.ui.custview.Damp  -->
+    	<ListView 
+    	    android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:id="@+id/sessions"
+			android:fadingEdge="none"
+			android:scrollingCache="false"
+			android:dividerHeight="0dip"
+			android:layout_marginTop="0dp"
+			android:fastScrollEnabled="true"
+			android:layout_above="@+id/mine_session_delete_layout"
+			/>
+		
+		
+    	<LinearLayout 
+		    android:layout_width="fill_parent"
+	   	 	android:layout_height="wrap_content"
+	   	 	android:orientation="horizontal"
+	   	 	android:gravity="center"
+	   	 	android:layout_centerVertical="true"
+	   	 	android:layout_centerHorizontal="true"
+	   	 	android:id="@+id/mine_session_delete_layout"
+	   	 	android:paddingLeft="10dp"
+	   	 	android:paddingRight="10dp"
+	   	 	android:background="@drawable/set_list_bg_middle_normal"
+	   	 	android:layout_alignParentBottom="true"
+	   	 	android:visibility="gone"
+		    >
+		    <Button 
+		        android:layout_width="0dp"
+		        android:layout_height="45dip"
+		        android:layout_weight="1"
+		        android:text="确定(0)"
+		        android:background="@drawable/mine_login_btn"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:id="@+id/btnsure"
+		        />
+		     <Button 
+		        android:layout_width="0dp"
+		        android:layout_height="45dip"
+		        android:layout_weight="1"
+		        android:text="取消"
+		        android:background="@drawable/mine_gray_button"
+                android:textColor="#6e6e6e"
+                android:textSize="24sp"
+                android:id="@+id/btncancel"
+                android:layout_marginLeft="10dp"
+		        />
+		    
+		</LinearLayout>
+    	
+	</RelativeLayout>
+    
+</LinearLayout>

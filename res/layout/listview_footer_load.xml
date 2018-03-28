@@ -1,0 +1,39 @@
+<LinearLayout 
+    android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:gravity="center"
+  android:orientation="horizontal"
+  android:background="@drawable/list_selector"
+  >  
+    <TextView android:textSize="16sp"
+     android:textColor="#5b5a5a" 
+     android:gravity="center" 
+     android:id="@+id/list_footer_more" 
+     android:layout_width="fill_parent" 
+     android:layout_height="wrap_content"
+     android:text="更多.."/>
+     
+    <LinearLayout android:gravity="center" 
+    	android:layout_gravity="center" 
+    	android:orientation="horizontal" 
+    	android:id="@+id/list_footer_loading" 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent">   
+        <ProgressBar android:layout_gravity="center_vertical" 
+        	android:id="@+id/list_footer_progress" 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:indeterminateBehavior="repeat" 
+        	style="?android:progressBarStyleSmallInverse" />   
+        <TextView android:textColor="#2d2d2d"
+        	android:gravity="left|center" 
+        	android:padding="3.0px" 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:text="加载中..." 
+        	android:textSize="24sp"
+        	/>   
+    </LinearLayout>   
+</LinearLayout>  

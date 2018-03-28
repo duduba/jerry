@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
+ 	<RelativeLayout 
+        android:layout_width="fill_parent"
+		android:layout_height="@dimen/title_bar_height"
+		android:background="@drawable/title_bar"
+		android:layout_alignParentTop="true"
+		>
+        
+        <Button
+            android:id="@+id/back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/new_list_item_pad14"
+            android:background="@drawable/back_btn_selector"
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/new_info_pad10"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_24" />
+        
+	    <TextView 
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/title"
+			android:gravity="center"
+			android:textColor="#ffffffff"
+			style="@style/title"
+			android:layout_centerInParent="true">
+		</TextView>
+
+	     <ImageView
+            android:id="@+id/rotate"
+            android:layout_width="@dimen/new_info_btn_width"
+            android:layout_height="@dimen/new_info_btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/new_list_item_pad14"
+            android:src="@drawable/mine_picupload_rotate"
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/new_info_pad10"
+           />
+	</RelativeLayout>
+	
+ 	
+ 	<RelativeLayout 
+ 	     android:layout_width="fill_parent"
+   		 android:layout_height="fill_parent"
+ 	    >
+ 	    		<ImageView 
+ 	    		     android:layout_width="fill_parent"
+   		 			 android:layout_height="fill_parent"
+   		 			 android:id="@+id/upload_img"
+   		 			 android:layout_above="@+id/upload_progress"
+   		 			 android:layout_marginTop="20dip"
+   		 			 android:layout_marginBottom="10dip"
+   		 			 android:scaleType="center"
+ 	    		    />
+ 	    			
+ 	    		  <ProgressBar 
+ 	    		     android:layout_width="fill_parent"
+   		 			 android:layout_height="wrap_content"
+   		 			 android:layout_marginLeft="15dip"
+   		 			 android:layout_marginRight="15dip"
+   		 			 android:layout_marginBottom="10dip"
+   		 			 android:layout_above="@+id/btn_save"
+   		 			 android:id="@+id/upload_progress"
+   		 			 style="?android:attr/progressBarStyleHorizontal"
+   		 			 android:visibility="gone"
+ 	    		      />
+ 	    			
+                  <Button 
+	                   android:layout_width="120dip"
+					   android:layout_height="40dip"
+	                   android:layout_marginBottom="15dp"
+	                   android:text="上传图片"
+	                   android:background="@drawable/mine_login_btn"
+	                   android:textColor="@color/white"
+	                   android:textSize="15sp"
+	                   android:id="@+id/btn_save"
+	                   android:layout_alignParentBottom="true"
+	                   android:layout_centerHorizontal="true"
+                  />
+ 	</RelativeLayout>
+    
+    </LinearLayout>

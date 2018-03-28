@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gesture-image="http://schemas.polites.com/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#222222"
+     >
+     
+      <RelativeLayout 
+        android:layout_width="fill_parent"
+		android:layout_height="@dimen/title_bar_height"
+		android:background="@drawable/com_tencent_open_agent_toolbar_bg_new"
+		>
+        
+       <ImageView 
+           android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+           android:id="@+id/back"
+           android:src="@drawable/zoom_image_back_selector"
+           android:layout_centerVertical="true"
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="10dip"
+           />
+        
+	    <TextView 
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/title"
+			android:gravity="center"
+			android:textColor="#ffffffff"
+			android:text="头像"
+			style="@style/title"
+			android:layout_centerInParent="true">
+		</TextView>
+
+	      <ImageView 
+           android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+           android:id="@+id/download"
+           android:src="@drawable/zoom_image_down_selector"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="10dip"
+           />
+		
+	</RelativeLayout>
+    
+      
+      
+      <RelativeLayout 
+          android:layout_width="fill_parent"
+		  android:layout_height="fill_parent"
+          >
+          
+          <!--  
+              <com.zxtd.information.gestureimage.GestureImageView 
+               android:layout_width="fill_parent"
+		  	   android:layout_height="fill_parent"
+		  	   android:id="@+id/show_header"
+		  	   android:layout_above="@+id/mine_single_opt_layout"
+		  	   android:src="@drawable/personal_bg_bak1"
+		  	   android:scaleType="matrix"
+				gesture-image:min-scale="0.75"
+    			gesture-image:max-scale="10.0"
+                  >
+              </com.zxtd.information.gestureimage.GestureImageView>
+              -->
+              
+              <ImageView 
+               android:layout_width="fill_parent"
+		  	   android:layout_height="fill_parent"
+		  	   android:id="@+id/show_header"
+		  	   android:layout_above="@+id/mine_single_opt_layout"
+		  	   android:src="@drawable/personal_bg_bak1"
+		  	   android:scaleType="matrix"
+		  	   android:layout_marginBottom="20dip"
+                  />
+          
+          <LinearLayout 
+              android:layout_width="wrap_content"
+		  	  android:layout_height="wrap_content"
+		  	  android:orientation="horizontal"
+		  	  android:layout_alignParentBottom="true"
+		  	  android:layout_marginBottom="20dip"
+		  	  android:id="@+id/mine_single_opt_layout"
+		  	  android:background="@drawable/album_toolbar_black"
+		  	  android:gravity="center"
+		  	  android:layout_centerHorizontal="true"
+              >
+              
+              <ImageView 
+                   android:layout_width="wrap_content"
+		  	  	   android:layout_height="wrap_content"
+		  	  	   android:src="@drawable/toolbar_left"
+		  	  	   android:id="@+id/rotate_left"
+		  	  	   android:layout_marginLeft="10dip"
+                  />
+              
+                <ImageView 
+                   android:layout_width="wrap_content"
+		  	  	   android:layout_height="wrap_content"
+		  	  	   android:src="@drawable/toolbar_right"
+		  	  	   android:id="@+id/rotate_right"
+		  	  	   android:layout_marginLeft="30dip"
+                  />
+                
+                 <ImageView 
+                   android:layout_width="wrap_content"
+		  	  	   android:layout_height="wrap_content"
+		  	  	   android:src="@drawable/toolbar_zoomout"
+		  	  	   android:id="@+id/zoom_out"
+		  	  	   android:layout_marginLeft="30dip"
+                  />
+              
+                  <ImageView 
+                   android:layout_width="wrap_content"
+		  	  	   android:layout_height="wrap_content"
+		  	  	   android:src="@drawable/toolbar_zoomin"
+		  	  	   android:id="@+id/zoom_in"
+		  	  	   android:layout_marginLeft="30dip"
+		  	  	   android:layout_marginRight="10dip"
+                  />
+          </LinearLayout>
+      </RelativeLayout>
+    
+    
+     </LinearLayout>

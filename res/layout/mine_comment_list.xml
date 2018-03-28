@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        <include  
+         layout="@layout/title_bar_back" 
+         />
+    <RelativeLayout 
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        >
+	    <RadioGroup 
+	        android:orientation="horizontal"
+	        android:id="@+id/mine_comment_rp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="44dp"
+	        android:layout_alignParentTop="true"
+	        android:background="@drawable/comment_tab_bg"
+    		android:gravity="center_horizontal"
+	        >
+	        	<RadioButton
+						android:text="我的评论"
+						android:id="@+id/mine_comment"
+						android:layout_marginTop="0.0dip"
+		    			android:textSize="16sp"
+		    			android:clickable="true"
+		    			style="@style/main_tab_bottom"
+		    			android:gravity="center"
+		    			android:background="#00000000"
+					/>
+	        	<View 
+	        	    android:layout_width="2dip"
+	        	    android:layout_height="fill_parent"
+	        	    android:background="@drawable/comment_tab_divide"/>
+	        	<RadioButton
+						android:text="评论我的"
+						android:id="@+id/mine_reply"
+						android:layout_marginTop="0.0dip"
+		    			android:textSize="16sp"
+		    			android:clickable="true"
+		    			style="@style/main_tab_bottom"
+		    			android:gravity="center"
+		    			android:background="#00000000"
+					/>
+	    </RadioGroup>
+    	  <ImageView
+				android:id="@+id/img_select"
+				android:layout_width="200dp"
+				android:layout_height="2dp"
+				android:background="#33b5e5"
+				android:layout_alignBottom="@+id/mine_fans_focus_rg"
+				android:layout_marginBottom="1dp"
+			/>
+    </RelativeLayout>
+    
+    
+        <android.support.v4.view.ViewPager
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/mine_fansfocus_viewPager"
+	        android:background="#fff0f0f0"
+	       />
+	
+</LinearLayout>

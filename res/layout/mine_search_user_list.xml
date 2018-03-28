@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+     >
+  		  <com.zxtd.information.ui.custview.RoundAngleImageView
+			   android:layout_width="55dip"
+			   android:layout_height="55dip"
+			   android:src="@drawable/mine_user_logo"
+			   android:scaleType="fitXY"
+			   android:layout_alignParentLeft="true"
+			   android:layout_marginLeft="10dip"
+			   android:layout_centerVertical="true"
+			   android:id="@+id/user_icon"
+			   android:layout_marginTop="15dip"
+			   android:layout_marginBottom="15dip"
+	       />
+  		  
+  	 <RelativeLayout 
+  		      android:layout_width="fill_parent"
+  		      android:layout_height="wrap_content"
+  		      android:layout_toRightOf="@+id/user_icon"
+  		      android:layout_centerVertical="true"
+  		      >
+  		      <LinearLayout 
+	  		      android:layout_width="fill_parent"
+	  		      android:layout_height="wrap_content"
+	  		      android:orientation="vertical"
+	  		      android:layout_marginLeft="8dip"
+	  		      android:layout_marginRight="8dip"
+  		          android:layout_toLeftOf="@+id/btn_opt"
+  		      >
+  				
+  		      <RelativeLayout 
+  		          android:layout_width="fill_parent"
+	  		      android:layout_height="wrap_content"
+  		          >
+  		           <TextView 
+	  		        android:layout_width="fill_parent"
+	  		      	android:layout_height="wrap_content"
+	  		      	android:textSize="18sp"
+	  		        android:textColor="#6c6c6c"
+	  		        android:singleLine="true"
+	  		        android:id="@+id/nick_name"
+	  		        android:layout_toLeftOf="@+id/img_mutual_focus"
+	  		          />
+  		          
+  		           <ImageView 
+  		                android:layout_width="wrap_content"
+	  		      		android:layout_height="wrap_content"
+	  		      		android:src="@drawable/mutual_focus"
+	  		      		android:id="@+id/img_mutual_focus"
+	  		      		android:layout_alignParentRight="true"
+	  		      		android:layout_marginLeft="6dip"
+	  		      		android:layout_marginRight="6dip"
+	  		      		android:visibility="gone"
+  		               />
+  		      </RelativeLayout>
+  		     
+  		      
+  		      <TextView 
+  		        android:layout_width="fill_parent"
+  		      	android:layout_height="wrap_content"
+  		      	android:textSize="14sp"
+  		        android:textColor="#9c9c9c"
+  		        android:singleLine="true"
+  		        android:id="@+id/area"
+  		        android:layout_marginTop="5dip"
+  		          />
+  		      
+  		  </LinearLayout>
+  		  
+  		      
+  		       <LinearLayout 
+		    	  android:layout_width="75dip"
+            	  android:layout_height="33dip"
+	  		      android:layout_alignParentRight="true"
+	  		      android:layout_centerVertical="true"
+	  		      android:layout_marginRight="5dip"
+            	  android:orientation="horizontal"
+            	  android:background="@drawable/mine_white_button"
+            	  android:gravity="center"
+            	  android:id="@+id/btn_opt"        
+		    	  >
+		    	        	<ImageView 
+		    	        	    android:layout_width="wrap_content" 
+		    	   				android:layout_height="wrap_content"
+		    	   				android:src="@drawable/userinfo_relationship_indicator_plus"
+		    	   				android:id="@+id/btn_opt_focus_img"
+		    	        	    />
+		    	        	
+		    	        	<TextView 
+		    	        	android:text="关注"
+					        android:layout_marginLeft="1dip"
+					        android:layout_width="wrap_content" 
+		    	   			android:layout_height="wrap_content"
+	  		      			android:textColor="#32963C"
+           		 			android:textSize="13sp"
+           		 		 	android:padding="3dip"
+           		 		 	android:id="@+id/btn_opt_focus_text"
+		    	        	    />
+		    	        
+		    	    </LinearLayout>
+  		      
+  		  </RelativeLayout>
+  		  
+     </RelativeLayout>

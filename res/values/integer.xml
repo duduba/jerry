@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tag_key_hoder" type="id"/>
+    <item name="tag_key_check_bean" type="id"/>
+    <item name="tag_key_view" type="id"></item>
+    <item name="tag_key_flag" type="id"></item>
+    <item name="tag_image_item" type="id"></item>
+    <item name="tag_key_reply_bean" type="id"></item>
+    <item name="tag_key_position" type="id"></item>
+</resources>

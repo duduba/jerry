@@ -1,0 +1,77 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-ignorewarnings
+
+
+# 添加第三方jar包
+-libraryjars libs/umeng-sdk.jar
+-libraryjars libs/Android_SDK_component.jar
+-libraryjars libs/Android_SDK.jar
+-libraryjars libs/asmack.jar
+-libraryjars libs/baidumapapi.jar
+-libraryjars libs/commons-httpclient-3.0.1.jar
+-libraryjars libs/core.jar
+-libraryjars libs/jdom-2.0.5.jar
+-libraryjars libs/libammsdk.jar
+-libraryjars libs/locSDK_2.6.jar
+-libraryjars libs/open_sdk.jar
+-libraryjars libs/pinyin4j-2.5.0.jar
+-libraryjars libs/RennSDK-Android.jar
+
+-keep class android.support.v4.** {*;}
+-keep class org.jdom2.** {*;}
+-keep public class com.zxtd.information.ui.news.NewInfoActivity$JavascriptInterface{
+	public <methods>;
+}
+-keep public class com.zxtd.information.ui.R$*{
+	public static <fields>;
+}
+-keepclassmembers class * {
+	public <init>(org.json.JSONObject);
+}
+-keep public class com.umeng.fb.ui.ThreadView {
+}
+
+# 以下类过滤不混淆  
+-keep public class * extends com.umeng.**
+# 以下包不进行过滤 
+-keep class com.umeng.** { *; }
+
+# 以下类过滤不混淆  
+-keep public class * extends org.jivesoftware.**
+# 以下包不进行过滤 
+-keep class org.jivesoftware.** { *; }
+
+-keep class android.net.http.SslError {*;}
+-keep class * extends android.webkit.WebViewClient {*;}
+
+-keep class com.renn.rennsdk.**{*;}
+
+-keep class com.tencent.open.TDialog$*
+-keep class com.tencent.open.TDialog$* {*;}
+-keep class com.tencent.open.PKDialog
+-keep class com.tencent.open.PKDialog {*;}
+-keep class com.tencent.open.PKDialog$*
+-keep class com.tencent.open.PKDialog$* {*;}
+
+-keep class com.tencent.mm.sdk.openapi.WXMediaMessage {*;}
+-keep class com.tencent.mm.sdk.openapi.** implements com.tencent.mm.sdk.openapi.WXMediaMessage$IMediaObject {*;}

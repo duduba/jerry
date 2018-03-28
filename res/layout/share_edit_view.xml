@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff0f0f0" >
+    <include layout="@layout/title_bar_back_finish"/>
+	<EditText 
+	    android:id="@+id/edt_share_content"
+	    android:layout_width="fill_parent"
+	    android:layout_height="140dip"
+	    android:background="@drawable/new_title_edit_bg"
+	    android:layout_margin="10dip"
+	    android:gravity="left|top"/>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dip"
+	    android:layout_marginLeft="10dip"
+	    android:layout_marginRight="10dip" >
+
+		<com.zxtd.information.view.RadioImageSelector
+		    android:id="@+id/image_selector"
+		    android:layout_width="0dip"
+		    android:orientation="horizontal"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1" >
+		</com.zxtd.information.view.RadioImageSelector>
+		<TextView
+			    android:id="@+id/txt_word_count"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textColor="#2d2d2d" />
+		
+	</LinearLayout>
+
+</LinearLayout>

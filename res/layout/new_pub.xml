@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#f0f0f0" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dip" >
+
+            <RelativeLayout
+                android:id="@+id/btn_add_title"
+                style="@style/pub_news_add_btn"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="13dip"
+                android:layout_marginTop="14dip" >
+
+                <ImageView
+                    android:layout_width="29dip"
+                    android:layout_height="29dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/new_pub_icon_left_margin"
+                    android:src="@drawable/pub_title_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="+标题"
+                    android:textColor="#2d2d2d"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/pub_news_title_text"
+                style="@style/pub_news_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center_horizontal"
+                android:textColor="#2d2d2d"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/btn_add_picture"
+                style="@style/pub_news_add_btn"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="13dip"
+                android:layout_marginTop="13dip" >
+
+                <ImageView
+                    android:layout_width="29dip"
+                    android:layout_height="29dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/new_pub_icon_left_margin"
+                    android:src="@drawable/pub_image_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="+图片"
+                    android:textColor="#2d2d2d"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/pub_news_image_area"
+                style="@style/pub_news_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <com.zxtd.information.ui.pub.ImagesContainer
+                    android:id="@+id/pub_news_image_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="68dip"
+                    android:paddingRight="68dip" >
+                </com.zxtd.information.ui.pub.ImagesContainer>
+
+                <RelativeLayout
+                    android:id="@+id/btn_add_more_picture"
+                    style="@style/pub_news_add_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip" >
+
+                    <ImageView
+                        android:layout_width="29dip"
+                        android:layout_height="29dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/new_pub_icon_left_margin"
+                        android:src="@drawable/pub_image_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="再添一张"
+                        android:textColor="#2d2d2d"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_add_content"
+                style="@style/pub_news_add_btn"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="13dip"
+                android:layout_marginTop="13dip" >
+
+                <ImageView
+                    android:layout_width="29dip"
+                    android:layout_height="29dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/new_pub_icon_left_margin"
+                    android:src="@drawable/pub_content_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="+文字"
+                    android:textColor="#2d2d2d"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/pub_news_content_text"
+                style="@style/pub_news_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:textColor="#2d2d2d"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dip"
+                android:gravity="center"
+                android:text="@string/pub_news_note"
+                android:textColor="#767676"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dip" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/bottom_btn_area_bg"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <Button
+            android:id="@+id/btn_load_publish"
+            style="@style/pub_news_bottom_btn"
+            android:layout_width="@dimen/new_pub_drafts_w"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/btn_gray_selector"
+            android:text="草稿箱" />
+
+        <Button
+            android:id="@+id/btn_publish_new"
+            style="@style/pub_news_bottom_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_green_selector"
+            android:text="发布" />
+
+        <Button
+            android:id="@+id/btn_save_publish"
+            style="@style/pub_news_bottom_btn"
+            android:layout_width="@dimen/new_pub_drafts_w"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/btn_gray_selector"
+            android:text="保存" />
+    </LinearLayout>
+
+</LinearLayout>

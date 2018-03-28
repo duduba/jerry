@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#F0F0F0"
+    android:id="@+id/mine_regist_info_main"
+     >
+    
+    <include  
+         layout="@layout/title_bar_back" 
+         />
+    <ScrollView 
+		    android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:scrollbars="vertical"
+			android:scrollbarStyle="outsideOverlay"
+			android:scrollbarSize="0dp"
+			android:id="@+id/scroll_layout"
+			android:layout_marginTop="0dp"
+			android:fadingEdge="none"
+	    >
+	    
+         <LinearLayout 
+            android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			
+            >
+            <LinearLayout 
+                android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:id="@+id/top_layout"
+                >
+                 	<ImageView 
+           	    android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/regist_success"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="20dip"
+           	    />
+           	
+           	 <TextView 
+                    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="您还可以完善您的个人信息"
+					style="@style/mine_title"
+					android:layout_marginLeft="5dip"
+					android:layout_marginRight="5dip"
+					android:layout_marginTop="@dimen/margin_height_10"
+					android:layout_gravity="center_horizontal"
+               />
+                
+            </LinearLayout>
+          
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/margin_height_10"
+				android:layout_marginRight="@dimen/margin_height_10"
+				android:orientation="vertical"
+				android:layout_marginTop="20dip"
+                >
+            
+                   <LinearLayout 
+	                android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+	                >
+	                <TextView 
+	                    android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="昵&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;称:"
+						style="@style/mine_word"
+						android:id="@+id/mine_regdet_nicktitle"
+	                    />
+                    <EditText 
+                        android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dip"
+						android:background="@drawable/edittext_bg_normal"
+						android:id="@+id/mine_regist_nickname"
+						android:imeOptions="actionNext"
+                        />
+	                
+           	    </LinearLayout>
+                
+                <LinearLayout 
+	                android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginTop="10dip"
+	                >
+	                <TextView 
+	                    android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="个性签名:"
+						style="@style/mine_word"
+	                    />
+                    <EditText 
+                        android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dip"
+						android:background="@drawable/edittext_bg_normal"
+						android:id="@+id/mine_regist_sign"
+						android:imeOptions="actionNext"
+                        />
+	                
+           	    </LinearLayout>
+           	    
+                <LinearLayout 
+	                android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginTop="10dip"
+	                >
+	                <TextView 
+	                    android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="所&#160;&#160;在&#160;&#160;地:"
+						style="@style/mine_word"
+	                    />
+	                
+	                 <EditText 
+                        android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dip"
+						android:background="@drawable/edittext_bg_normal"
+						android:id="@+id/mine_regist_eare"
+						android:editable="false"
+						android:imeOptions="actionNext"
+                      />
+	                
+	                <!--  
+                   <LinearLayout 
+		                android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:layout_gravity="right"
+						android:gravity="right"
+		                >
+		                <TextView 
+		                    android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="请选择所在地"
+							style="@style/mine_word"
+		                    />
+		                <ImageView 
+		                    android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:src="@drawable/forward"
+							android:layout_marginLeft="5dip"
+		                    />
+	               </LinearLayout>
+	                -->
+           	    </LinearLayout>
+                
+                <LinearLayout 
+	                android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginTop="10dip"
+	                >
+	                <TextView 
+	                    android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="职&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;业:"
+						style="@style/mine_word"
+	                    />
+                    <EditText 
+                        android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dip"
+						android:background="@drawable/edittext_bg_normal"
+						android:id="@+id/mine_regist_work"
+						android:imeOptions="actionNext"
+                        />
+	                
+           	    </LinearLayout>
+           	    
+                <LinearLayout 
+	                android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginTop="10dip"
+	                >
+	                <TextView 
+	                    android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="性&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;别:"
+						style="@style/mine_word"
+						android:layout_gravity="center_vertical"
+						android:gravity="center_vertical"
+	                    />
+	                
+	                 <RadioGroup android:id="@+id/radioGroup" 
+						 android:contentDescription="性别" 
+						 android:layout_width="wrap_content" 
+						 android:layout_height="wrap_content"
+						 android:orientation="horizontal"
+						 android:layout_marginLeft="10dip"
+						 >    
+						 <RadioButton 
+							 android:layout_width="wrap_content" 
+							 android:layout_height="wrap_content" 
+							 android:id="@+id/radioMale" 
+							 android:text="男" 
+							 android:checked="true">
+						 </RadioButton>     
+						 <RadioButton 
+							 android:layout_width="wrap_content" 
+							 android:layout_height="wrap_content" 
+							 android:id="@+id/radioFemale" 
+							 android:text="女"
+							 android:layout_marginLeft="10dip">     
+						 </RadioButton>  
+						 
+						 <RadioButton 
+							 android:layout_width="wrap_content" 
+							 android:layout_height="wrap_content" 
+							 android:id="@+id/radioSecret" 
+							 android:text="保密"
+							 android:layout_marginLeft="10dip">     
+						 </RadioButton>
+					 </RadioGroup>
+	                
+	                <!--  
+                    <EditText 
+                        android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dip"
+						android:background="@drawable/edittext_bg_normal"
+						android:id="@+id/mine_regist_area"
+                        />
+	                -->
+	                
+	                
+           	    </LinearLayout>
+                
+                <LinearLayout 
+	                android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginTop="10dip"
+	                >
+	                <TextView 
+	                    android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="生&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;日:"
+						style="@style/mine_word"
+	                    />
+	                
+	           
+	                 <!--  -->
+                    <EditText 
+                        android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dip"
+						android:background="@drawable/edittext_bg_normal"
+						android:id="@+id/mine_regist_birth"
+						android:editable="false"
+						android:hint=""
+						android:inputType="date"
+						android:imeOptions="actionDone"
+                        />
+	                
+	                
+	                
+           	    </LinearLayout>
+           
+                  <Button 
+	                   android:layout_width="fill_parent"
+					   android:layout_height="40dip"
+	                   android:layout_marginTop="15dp"
+	                   android:text="保存进入个人主页"
+	                   android:background="@drawable/mine_login_btn"
+	                   android:textColor="@color/white"
+	                   android:textSize="15sp"
+	                   android:id="@+id/btn_regist"
+                  />
+                  
+              </LinearLayout>   
+            
+       </LinearLayout>
+            
+        
+	 </ScrollView>
+</LinearLayout>

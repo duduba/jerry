@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/menu_list_item"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/menu_list_dialog_item_textview_h"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_24"
+        android:textColor="#2d2d2d" />
+</LinearLayout>

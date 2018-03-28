@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_back_margin_left">5.0dip</dimen>
+	<dimen name="title_bar_height">50dip</dimen>
+    <dimen name="text_size_20">14sp</dimen>
+    <dimen name="text_size_22">15sp</dimen>
+    <dimen name="text_size_24">16sp</dimen>
+    <dimen name="text_size_26">18sp</dimen>
+    <dimen name="text_size_30">20sp</dimen>
+    <dimen name="text_size_36">24sp</dimen>
+    
+    <dimen name="pad_6">4dip</dimen>
+    <dimen name="pad_10">6.7dip</dimen>
+    <dimen name="pad_12">8dip</dimen>
+    <dimen name="pad_15">10dip</dimen>
+    <dimen name="pad_16">10.7dip</dimen>
+    <dimen name="pad_18">12dip</dimen>
+    <dimen name="pad_20">13.3dip</dimen>
+    <dimen name="pad_22">14.7dip</dimen>
+    <dimen name="pad_24">16dip</dimen>
+    <dimen name="pad_26">17.3dip</dimen>
+    <dimen name="pad_28">18.7dip</dimen>
+    <dimen name="pad_30">20dip</dimen>
+    <dimen name="pad_32">21.3dip</dimen>
+    <dimen name="pad_40">26.7dip</dimen>
+    <dimen name="pad_42">28dip</dimen>
+    <dimen name="pad_50">33.3dip</dimen>
+    <dimen name="pad_54">36dip</dimen>
+    <dimen name="pad_69">46dip</dimen>
+    
+    <dimen name="title_bar_height_x">48dip</dimen>
+    <dimen name="tab_widget_height">42dip</dimen>
+    <dimen name="new_type_list_height">35dip</dimen>
+    <dimen name="new_type_list_pad">3dip</dimen>
+    
+    <dimen name="new_type_item_height">26.5dip</dimen>
+    <dimen name="new_type_item_width">46.7dip</dimen>
+    <dimen name="new_type_item_divide_h">18.5dip</dimen>
+    <dimen name="new_type_item_divide_w">1.3dip</dimen>
+    <dimen name="new_type_item_divide_margin_left">1dip</dimen>
+    <dimen name="new_type_item_divide_margin_right">1.8dip</dimen>
+    
+    <dimen name="new_list_header_height">159dip</dimen>
+    <dimen name="new_list_header_title_height">22dip</dimen>
+    <dimen name="new_list_header_title_pad_left">9dip</dimen>
+    <dimen name="new_list_header_title_pad_right">7dip</dimen>
+    <dimen name="new_list_header_title_text_size">12dip</dimen>
+    
+    <dimen name="new_list_item_pad14">9.3dip</dimen>
+    <dimen name="new_list_item_pad16">10.7dip</dimen>
+    <dimen name="new_list_item_icom_width">81.3dip</dimen>
+    <dimen name="new_list_item_icom_height">57.3dip</dimen>
+    <dimen name="new_list_item_title_text_size">16sp</dimen>
+    <dimen name="new_list_item_info_text_size">12sp</dimen>
+    <dimen name="new_list_item_netfriend_icon_w">10.7dip</dimen>
+    <dimen name="new_list_item_netfriend_icon_h">10.7dip</dimen>
+    <dimen name="new_list_item_reply_w">33dip</dimen>
+    <dimen name="new_list_item_reply_text_size">12sp</dimen>
+    <dimen name="new_list_item_reply_icon_w">17.3dip</dimen>
+    <dimen name="new_list_item_reply_icon_h">13.3dip</dimen>
+    <dimen name="new_list_item_pad5">3.3dip</dimen>
+    
+    <dimen name="new_info_btn_height">35.3dip</dimen>
+    <dimen name="new_info_btn_width">57.3dip</dimen>
+    <dimen name="new_info_pad10">6.7dip</dimen>
+    <dimen name="new_info_pad15">10dip</dimen>
+    <dimen name="new_info_pad8">5.3dip</dimen>
+    <dimen name="new_info_poster_height">46dip</dimen>
+    
+    <dimen name="new_net_friend_item_data_w">60dip</dimen>
+    <dimen name="new_net_friend_item_post_w">17.3dip</dimen>
+    <dimen name="new_net_friend_item_post_h">13.3dip</dimen>
+    <dimen name="new_net_friend_type_title_h">38.7dip</dimen>
+    <dimen name="new_net_friend_type_icon_h">29dip</dimen>
+    <dimen name="new_net_friend_type_icon_w">29dip</dimen>
+    
+    <dimen name="new_post_support_w">74.7dip</dimen>
+    <dimen name="new_post_support_h">42.7dip</dimen>
+    <dimen name="new_post_btn_w">60dip</dimen>
+    <dimen name="new_post_btn_h">26.7dip</dimen>
+    <dimen name="new_post_dialog_nickname_width">48.7dip</dimen>
+    
+    <dimen name="new_pub_title_h">42.7dip</dimen>
+    <dimen name="new_pub_image_w">12dip</dimen>
+    <dimen name="new_pub_image_h">10.7dip</dimen>
+    <dimen name="new_pub_linearlayout_h">40dip</dimen>
+    <dimen name="new_pub_view_h">25.3dip</dimen>
+    <dimen name="new_pub_view_w">1.3dip</dimen>
+    <dimen name="new_pub_icon_left_margin">76dip</dimen>
+    <dimen name="new_pub_drafts_w">89dip</dimen>
+    
+    <dimen name="show_pictrue_dialog_linearlayout_h">50.7dip</dimen>
+    
+    <dimen name="setting_info_textview_h">34.7dip</dimen>
+    <dimen name="setting_info_textview2_h">1.3dip</dimen>
+    <dimen name="setting_info_textview76_h">50.7dip</dimen>
+    <dimen name="setting_info_linearlayout_h">61.3dip</dimen>
+    <dimen name="font_setting_dialog_linearlayout_h">46.7dip</dimen>
+    <dimen name="font_setting_dialog_linearlayout_h_82">54.7dip</dimen>
+    <dimen name="font_setting_dialog_button218_w">145.3dip</dimen>
+    
+    <dimen name="pub_list_dialog_item76_h">50.7dip</dimen>
+    <dimen name="pub_list_dialog_item_ImageView_w">26.7dip</dimen>
+    
+    <dimen name="post_comment_LinearLayout_h">68dip</dimen>
+    <dimen name="post_comment_imageview74_w">49.3dip</dimen>
+    <dimen name="post_comment_imageview76_h">50.7dip</dimen>
+    <dimen name="post_comment_imageview33_w">22dip</dimen>
+    <dimen name="post_comment_imageview32_h">21.3dip</dimen>
+    
+    <dimen name="picture_dialog_textview_h">46.7dip</dimen>
+    
+    <dimen name="menu_list_dialog_item_textview_h">44dip</dimen>
+    
+    <dimen name="copy_view_h">42.7dip</dimen>
+    <dimen name="copy_view_w">74.7dip</dimen>
+    
+    <dimen name="about_view_LinearLayout_w">282.7dip</dimen>
+    <dimen name="about_view_LinearLayout_h">169.3dip</dimen>
+    <dimen name="about_view_imageview_h">50dip</dimen>
+    <dimen name="about_view_imageview_w">154.7dip</dimen>
+    
+    <dimen name="nick_name_list_item_add_icon_w">14.7dip</dimen>
+    <dimen name="nick_name_list_item_add_icon_h">14.7dip</dimen>
+    <dimen name="nick_name_list_item_name_text_h">45.3dip</dimen>
+    <dimen name="nick_name_list_item_dele_icon_w">22.7dip</dimen>
+    <dimen name="nick_name_list_item_dele_icon_h">24dip</dimen>
+    <dimen name="nick_name_list_footer_btn_w">204dip</dimen>
+    <dimen name="nick_name_list_footer_btn_h">44dip</dimen>
+    
+</resources>

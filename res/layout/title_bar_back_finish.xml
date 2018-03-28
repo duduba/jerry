@@ -1,0 +1,48 @@
+    <RelativeLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+		android:layout_height="@dimen/title_bar_height"
+		android:background="@drawable/title_bar"
+		android:layout_alignParentTop="true"
+		>
+        
+        <Button
+            android:id="@+id/back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/new_list_item_pad14"
+            android:background="@drawable/back_btn_selector"
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/new_info_pad10"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_24" />
+        
+	    <TextView 
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/title"
+			android:gravity="center"
+			android:textColor="#ffffffff"
+			style="@style/title"
+			android:layout_centerInParent="true">
+		</TextView>
+
+	    <Button
+	        android:id="@+id/finish"
+	        android:layout_width="@dimen/new_info_btn_width"
+            android:layout_height="@dimen/new_info_btn_height"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginRight="7dp"
+	        android:background="@drawable/comment_btn_selector"
+	        android:textColor="#fff"
+	        android:text="完成"
+	      	android:gravity="center"
+	        android:textSize="@dimen/text_size_24"
+	        />
+		
+	</RelativeLayout>

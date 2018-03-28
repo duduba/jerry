@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"
+    android:orientation="vertical"  
+    >
+    
+    <include  
+         layout="@layout/title_bar_back" 
+         />
+    
+     <RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:background="@drawable/search_bar_bg"
+		android:gravity="center"
+		android:layout_gravity="center"
+		android:paddingTop="8dp"
+		android:paddingBottom="8dp"
+	     >
+
+	    <!-- android:drawableLeft="@drawable/search_bar_icon_normal" -->
+	<EditText 
+	    android:layout_width="fill_parent"
+		android:layout_height="34dp"	
+		android:id="@+id/mine_search_focusnickname"
+		android:singleLine="true"	
+		android:hint="输入昵称"	
+		android:textColorHint="#cccccc"
+		android:layout_marginRight="5dp"
+		android:layout_marginLeft="6dp"
+		android:background="@drawable/query_editext"
+	    />
+	
+		
+	
+	   <ImageView 
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:src="@drawable/input_edit_query"
+	    	    android:layout_alignRight="@+id/mine_search_focusnickname"
+	    	    android:layout_centerVertical="true"
+	    	    android:id="@+id/img_query"
+	    	    android:layout_marginRight="5dp"
+	    	    />
+
+	</RelativeLayout>
+	
+     <com.zxtd.information.ui.custview.DampListView 
+ 	    	android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:id="@+id/listview"
+			android:fadingEdge="none"
+			android:scrollingCache="false"
+			android:dividerHeight="0dip"
+			android:layout_marginTop="0dp"
+			android:fastScrollEnabled="false"
+			android:cacheColorHint="#00000000"
+	/>
+     
+     
+ </LinearLayout>    

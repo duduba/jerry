@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/new_list_item_pad5"
+        android:paddingLeft="@dimen/pad_28"
+        android:paddingRight="@dimen/pad_28"
+        android:paddingTop="@dimen/pad_22"
+        android:gravity="center_vertical" >
+        <LinearLayout
+            android:id="@+id/line_to_other_main"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <com.zxtd.information.ui.custview.RoundAngleImageView
+                android:id="@+id/mine_self_header"
+                android:layout_width="27dip"
+                android:layout_height="27dip"
+                android:background="#ffc0c0c0"
+                android:scaleType="fitXY"
+                android:src="@drawable/mine_user_logo" />
+
+            <TextView
+                android:id="@+id/post_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:lines="1"
+                android:text="昵称"
+                android:textColor="#0080e5"
+                android:textSize="@dimen/text_size_20" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/storey_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#5b5a5a"
+            android:textSize="@dimen/text_size_20" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/post_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/pad_28"
+        android:paddingRight="@dimen/pad_28"
+        android:paddingBottom="@dimen/pad_22"
+        android:text="内容"
+        android:textColor="#2d2d2d"
+        android:textSize="@dimen/text_size_24" />
+
+</LinearLayout>

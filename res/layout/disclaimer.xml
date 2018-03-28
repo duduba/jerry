@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0">
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_height_x"
+        android:background="@drawable/title_bar" >
+        <Button
+            android:id="@+id/disclaimer_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/new_list_item_pad14"
+            android:background="@drawable/back_btn_selector"
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/new_info_pad10"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_24" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="免责声明"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_36" />
+    </RelativeLayout>
+
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:fadingEdge="none">
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/pad_22"
+            android:textColor="#2d2d2d"
+            android:textSize="@dimen/text_size_30"
+            android:text="免责声明" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad_22"
+            android:layout_marginLeft="@dimen/new_list_item_pad14"
+            android:layout_marginRight="@dimen/new_list_item_pad14"
+            android:textColor="#2d2d2d"
+            android:textSize="@dimen/text_size_24"
+            android:text="@string/disclaimer_text1" 
+            android:lineSpacingExtra="5dip"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad_10"
+            android:layout_marginLeft="@dimen/new_list_item_pad14"
+            android:layout_marginRight="@dimen/new_list_item_pad14"
+            android:textColor="#2d2d2d"
+            android:textSize="@dimen/text_size_24"
+            android:text="@string/disclaimer_text2" 
+            android:lineSpacingExtra="5dip"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad_10"
+            android:layout_marginLeft="@dimen/new_list_item_pad14"
+            android:layout_marginRight="@dimen/new_list_item_pad14"
+            android:textColor="#2d2d2d"
+            android:textSize="@dimen/text_size_24"
+            android:text="@string/disclaimer_text3" 
+            android:lineSpacingExtra="5dip"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad_10"
+            android:layout_marginLeft="@dimen/new_list_item_pad14"
+            android:layout_marginRight="@dimen/new_list_item_pad14"
+            android:textColor="#2d2d2d"
+            android:textSize="@dimen/text_size_24"
+            android:text="@string/disclaimer_text4" 
+            android:lineSpacingExtra="5dip"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad_10"
+            android:layout_marginLeft="@dimen/new_list_item_pad14"
+            android:layout_marginRight="@dimen/new_list_item_pad14"
+            android:textColor="#2d2d2d"
+            android:textSize="@dimen/text_size_24"
+            android:text="@string/disclaimer_text5" 
+            android:lineSpacingExtra="5dip"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad_10"
+            android:layout_marginLeft="@dimen/new_list_item_pad14"
+            android:layout_marginRight="@dimen/new_list_item_pad14"
+            android:textColor="#2d2d2d"
+            android:textSize="@dimen/text_size_24"
+            android:text="@string/disclaimer_text6" 
+            android:lineSpacingExtra="5dip"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad_10"
+            android:layout_marginLeft="@dimen/new_list_item_pad14"
+            android:layout_marginRight="@dimen/new_list_item_pad14"
+            android:textColor="#2d2d2d"
+            android:textSize="@dimen/text_size_24"
+            android:text="@string/disclaimer_text7" 
+            android:lineSpacingExtra="5dip"/>
+        
+        
+    </LinearLayout>
+</ScrollView>    
+</LinearLayout>

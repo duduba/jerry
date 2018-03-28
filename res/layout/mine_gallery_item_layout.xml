@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/icon_framelayout"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           >
+		<ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/album_load"
+             />
+		</RelativeLayout>
+		
+        <RelativeLayout
+            android:id="@+id/cross_icon_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="invisible"
+             >
+
+            <ImageView
+                android:id="@+id/gallery_delete_icon"
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:padding="0dp"
+                android:src="@drawable/pub_delete_info" />
+        </RelativeLayout>
+    </FrameLayout>

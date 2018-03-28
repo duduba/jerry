@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
+
+  
+      <RelativeLayout 
+        android:layout_width="fill_parent"
+		android:layout_height="@dimen/title_bar_height"
+		android:background="@drawable/title_bar"
+		>
+        
+        <Button
+            android:id="@+id/back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/new_list_item_pad14"
+            android:background="@drawable/back_btn_selector"
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/new_info_pad10"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_24" />
+        
+		
+         <TextView 
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/title"
+			android:gravity="left"
+			android:textColor="#ffffffff"
+			style="@style/title"
+			android:layout_toRightOf="@+id/back"
+			android:text=""
+			android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:singleLine="true"
+			>
+		</TextView>
+        
+        <!--  
+	    <TextView 
+	        android:layout_width="220dip"
+			android:layout_height="wrap_content"
+			android:id="@+id/title"
+			android:gravity="center"
+			android:textColor="#ffffffff"
+			style="@style/title"
+			android:layout_centerInParent="true"
+			android:text=""
+			android:layout_marginLeft="5dip"
+			android:layout_marginRight="5dip"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:singleLine="true"
+			>
+		</TextView>
+	     -->
+	</RelativeLayout>
+    
+      
+    	<RelativeLayout 
+    	    android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+    	    >
+        
+    	<com.zxtd.information.ui.custview.CustomerScrollView  
+		    android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:scrollbars="vertical"
+			android:scrollbarStyle="outsideOverlay"
+			android:scrollbarSize="0dp"
+			android:id="@+id/scroll_layout"
+			android:layout_marginTop="0dp"
+			android:fadingEdge="none"
+	    >
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+        	android:layout_height="fill_parent" 
+        	android:orientation="vertical"
+	        >
+  	
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="540dip" 
+        android:id="@+id/mine_base_info"
+        android:layout_marginTop="-315dip"
+       
+        >
+	
+       <ImageView
+           android:id="@+id/mine_bg_img"
+           android:layout_width="fill_parent"
+           android:layout_height="495dip"
+           android:src="@drawable/other_home_page1"
+           android:scaleType="fitXY"
+           android:layout_alignParentTop="true"
+            />
+        
+		<com.zxtd.information.ui.custview.RoundAngleImageView 
+		    android:id="@+id/avatar_imgbtn" 
+			android:background="@drawable/mine_avater_bg" 
+			android:clickable="true" 
+			android:layout_width="90.0dip" 
+			android:layout_height="90.0dip" 
+			android:layout_marginLeft="@dimen/margin_height_10" 
+			android:layout_marginTop="-45.0dip" 
+			android:layout_marginRight="@dimen/margin_height_10" 
+			android:src="@drawable/mine_user_logo" 
+			android:layout_below="@+id/mine_bg_img" 
+			android:contentDescription="自定义头像"
+		    />
+     
+		<!-- android:layout_marginTop="5.0dip"  -->
+		<LinearLayout 
+		    android:layout_gravity="center_vertical" 
+		    android:orientation="vertical" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:layout_toRightOf="@id/avatar_imgbtn" 
+		    android:layout_below="@+id/mine_bg_img"
+		    android:layout_marginTop="-45.0dip"
+		    android:gravity="center_vertical"
+		    >
+			
+		    	<LinearLayout 
+		    	    android:orientation="horizontal" 
+		    	    android:layout_width="wrap_content" 
+		    	    android:layout_height="wrap_content" 
+		    	    android:layout_marginBottom="0dip"
+		    	    android:layout_marginTop="3dip"
+		    	    >
+		    	    
+		    	    
+                    <TextView android:textSize="16.0sp" 
+                        android:textColor="#ffffff" 
+                        android:id="@+id/mine_other_nickname" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_marginRight="8.0dip"
+                        android:text=""
+                         />
+                    
+                    <ImageView 
+                        android:layout_width="wrap_content" 
+		    	    	android:layout_height="wrap_content" 
+		    	    	android:src="@drawable/lbs_female"
+		    	    	android:layout_gravity="center_vertical"
+		    	    	android:layout_marginRight="8.0dip"
+		    	    	android:id="@+id/mine_other_sex"
+                        />
+                    
+                    <TextView android:textSize="10.0sp" 
+                        android:textColor="#E8F5F8" 
+                        android:id="@+id/mine_other_birth" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:text="生日:"
+                        />
+                    
+                </LinearLayout>
+                
+		    	<LinearLayout 
+		    	    android:orientation="horizontal" 
+		    	    android:layout_width="wrap_content" 
+		    	    android:layout_height="wrap_content" 
+		    	    android:layout_marginBottom="3.0dip"
+		    	    android:layout_marginTop="2dip">
+                    <TextView 
+                        android:textSize="10.0sp" 
+                        android:textColor="#E8F5F8" 
+                        android:id="@+id/mine_other_location" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_marginRight="8.0dip"
+                        android:text="所在地："
+                         />
+                    <TextView android:textSize="10.0sp" 
+                        android:textColor="#E8F5F8" 
+                        android:id="@+id/mine_other_work" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:text="职业:"
+                        />
+                </LinearLayout>
+                
+		    	<LinearLayout 
+		    	    android:orientation="horizontal" 
+		    	    android:layout_width="wrap_content" 
+		    	    android:layout_height="wrap_content"
+		    	    android:layout_marginTop="7dip"
+		    	    >
+                    
+		    	    <LinearLayout 
+		    	          android:layout_width="100dip"
+            	  		  android:layout_height="30dip"
+            	  		  android:orientation="horizontal"
+            	  		  android:background="@drawable/mine_white_button"
+            	  		  android:gravity="center"
+            	  		  android:id="@+id/mine_other_btn_add"
+		    	        >
+		    	        	<ImageView 
+		    	        	    android:layout_width="wrap_content" 
+		    	   				android:layout_height="wrap_content"
+		    	   				android:src="@drawable/userinfo_relationship_indicator_plus"
+		    	   				android:id="@+id/mine_other_btn_focus_img"
+		    	        	    />
+		    	        	
+		    	        	<TextView 
+		    	        	android:text="加关注"
+					        android:layout_marginLeft="5dip"
+					        android:layout_width="wrap_content" 
+		    	   			android:layout_height="wrap_content"
+	  		      			android:textColor="#32963C"
+           		 			android:textSize="13sp"
+           		 		 	android:padding="3dip"
+           		 		 	android:id="@+id/mine_other_btn_focus_text"
+		    	        	    />
+		    	        
+		    	    </LinearLayout>
+		    	   
+		    	    
+		    	    <LinearLayout 
+		    	          android:layout_width="100dip"
+            	  		  android:layout_height="30dip"
+            	  		  android:orientation="horizontal"
+            	  		  android:background="@drawable/mine_white_button"
+            	  		  android:gravity="center"
+            	  		  android:layout_marginLeft="5dip"
+					      android:id="@+id/mine_other_btn_write"
+		    	        >
+		    	        	<ImageView 
+		    	        	    android:layout_width="wrap_content" 
+		    	   				android:layout_height="wrap_content"
+		    	   				android:src="@drawable/userinfo_relationship_indicator_message"
+		    	        	    />
+		    	        	
+		    	        	<TextView 
+		    	        	android:text="写&#160;私&#160;信"
+					        android:layout_marginLeft="5dip"
+					        android:layout_width="wrap_content" 
+		    	   			android:layout_height="wrap_content"
+	  		      			android:textColor="#4173AF"
+           		 			android:textSize="13sp"
+           		 		 	android:padding="3dip"
+		    	        	    />
+		    	        
+		    	    </LinearLayout>
+		    	    
+		    	 
+		    	      
+		    	</LinearLayout>
+		    	
+		    
+		</LinearLayout>
+    </RelativeLayout>
+ 
+    
+    
+    
+    
+    <!-- 个性签名 -->
+    	<TextView 
+		    android:textSize="12.0sp" 
+            android:textColor="@color/black" 
+		     android:layout_width="fill_parent"
+             android:layout_height="wrap_content" 
+             android:text=""
+             android:maxLines="2"
+             android:ellipsize="end"
+             android:lineSpacingExtra="4dip"
+             android:layout_marginTop="8dp"
+             android:layout_marginLeft="@dimen/margin_height_10" 
+             android:id="@+id/mine_other_sign"
+		    />
+    	
+    	
+    	
+    	
+    	
+    	
+    	<LinearLayout 
+    	    android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="@dimen/margin_height_10"
+            android:orientation="horizontal"
+            android:visibility="gone"
+    	    >
+    	    <ImageView 
+             	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content" 
+		    	android:src="@drawable/information_title_icon"
+		    	android:layout_gravity="center_vertical"
+		    	android:layout_marginRight="3.0dip"
+            />           
+    	    
+    	     <TextView android:textSize="16.0sp" 
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_marginLeft="0dip"
+                        android:text="照片墙"
+                         />
+    	</LinearLayout>
+    	
+    	<LinearLayout 
+    	    android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/thirdparty_images_bg"
+            android:layout_marginLeft="10dip"
+            
+    	    >
+    	    <com.zxtd.information.ui.custview.AlignLeftGallery 
+    	         android:layout_width="1000dp"
+            	 android:layout_height="wrap_content"
+            	 android:id="@+id/myGallery"
+            	 android:fadingEdgeLength="0dip"
+    	        />
+    	    
+    	</LinearLayout>
+    	
+    	
+     	<RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="@dimen/set_item_height"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="@drawable/set_top"
+		    android:layout_marginTop="15dp"
+		    android:focusable="true"
+		    android:id="@+id/mine_other_fans"
+	    >
+	    <ImageView 
+	         android:layout_width="wrap_content"
+	       	 android:layout_height="wrap_content"
+	       	 android:id="@+id/mine_other_fans_icon"
+	       	 android:layout_alignParentLeft="true"
+	       	 android:layout_marginLeft="10dp"
+	       	 android:src="@drawable/mine_fansfocus_icon"
+	       	 android:layout_centerVertical="true"
+	        />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="粉丝"
+	        android:layout_toRightOf="@+id/mine_other_fans_icon"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="16.0sp" 
+            android:textColor="@color/black"
+	        android:layout_centerVertical="true"     
+	         />
+	    
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text=""
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@+id/mine_other_fans_sub"
+	        android:layout_marginRight="10dip"
+	        android:id="@+id/mine_other_fans_count"
+	        />
+	    
+	  	<ImageView 
+	  	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:src="@drawable/mm_submenu_normal"
+	        android:layout_centerVertical="true"
+	        android:id="@+id/mine_other_fans_sub"
+	  	    />
+	</RelativeLayout>	 
+    <RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="@dimen/set_item_height"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="@drawable/set_bottom"
+		    android:focusable="true"
+		    android:id="@+id/mine_other_focus"
+	    >
+	    <ImageView 
+	         android:layout_width="wrap_content"
+	       	 android:layout_height="wrap_content"
+	       	 android:id="@+id/mine_other_focus_icon"
+	       	 android:layout_alignParentLeft="true"
+	       	 android:layout_marginLeft="10dp"
+	       	 android:src="@drawable/mine_fansfocus_icon"
+	       	 android:layout_centerVertical="true"
+	        />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="关注"
+	        android:layout_toRightOf="@+id/mine_other_focus_icon"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="16.0sp" 
+            android:textColor="@color/black"
+	        android:layout_centerVertical="true"     
+	         />
+	    
+	     <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text=""
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@+id/mine_other_focus_sub"
+	        android:layout_marginRight="10dip"
+	        android:id="@+id/mine_other_focus_count"
+	        />
+	    
+	  	<ImageView 
+	  	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:src="@drawable/mm_submenu_normal"
+	        android:layout_centerVertical="true"
+	        android:id="@+id/mine_other_focus_sub"
+	  	    />
+	</RelativeLayout>
+   
+    
+    
+    <RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="@dimen/set_item_height"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="@drawable/set_top"
+		    android:layout_marginTop="10dp"
+		    android:focusable="true"
+		    android:id="@+id/mine_other_public"
+	    >
+	    <ImageView 
+	         android:layout_width="wrap_content"
+	       	 android:layout_height="wrap_content"
+	       	 android:id="@+id/mine_other_public_icon"
+	       	 android:layout_alignParentLeft="true"
+	       	 android:layout_marginLeft="10dp"
+	       	 android:src="@drawable/mine_public"
+	       	 android:layout_centerVertical="true"
+	        />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="发布"
+	        android:layout_toRightOf="@+id/mine_other_public_icon"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="16.0sp" 
+            android:textColor="@color/black"
+	        android:layout_centerVertical="true"     
+	         />
+	    
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text=""
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@+id/mine_other_public_sub"
+	        android:layout_marginRight="10dip"
+	        android:id="@+id/mine_other_public_count"
+	        />
+	    
+	  	<ImageView 
+	  	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:src="@drawable/mm_submenu_normal"
+	        android:layout_centerVertical="true"
+	        android:id="@+id/mine_other_public_sub"
+	  	    />
+	</RelativeLayout>
+	<RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="@dimen/set_item_height"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="@drawable/set_middle"
+		    android:focusable="true"
+		    android:id="@+id/mine_other_comment"
+	    >
+	    <ImageView 
+	         android:layout_width="wrap_content"
+	       	 android:layout_height="wrap_content"
+	       	 android:id="@+id/mine_other_comment_icon"
+	       	 android:layout_alignParentLeft="true"
+	       	 android:layout_marginLeft="10dp"
+	       	 android:src="@drawable/mine_comment"
+	       	 android:layout_centerVertical="true"
+	        />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="评论"
+	        android:layout_toRightOf="@+id/mine_other_comment_icon"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="16.0sp" 
+            android:textColor="@color/black"
+	        android:layout_centerVertical="true"     
+	         />
+	    
+	     <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text=""
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@+id/mine_other_comment_sub"
+	        android:layout_marginRight="10dip"
+	        android:id="@+id/mine_other_comment_count"
+	        />
+	    
+	  	<ImageView 
+	  	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:src="@drawable/mm_submenu_normal"
+	        android:layout_centerVertical="true"
+	        android:id="@+id/mine_other_comment_sub"
+	  	    />
+	</RelativeLayout>	 
+    <RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="@dimen/set_item_height"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="@drawable/set_bottom"
+		    android:focusable="true"
+		    android:id="@+id/mine_other_coll"
+		    android:layout_marginBottom="10dip"
+	    >
+	    <ImageView 
+	         android:layout_width="wrap_content"
+	       	 android:layout_height="wrap_content"
+	       	 android:id="@+id/mine_other_coll_icon"
+	       	 android:layout_alignParentLeft="true"
+	       	 android:layout_marginLeft="10dp"
+	       	 android:src="@drawable/mine_collection"
+	       	 android:layout_centerVertical="true"
+	        />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="收藏"
+	        android:layout_toRightOf="@+id/mine_other_coll_icon"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="16.0sp" 
+            android:textColor="@color/black"
+	        android:layout_centerVertical="true"     
+	         />
+	    
+	     <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text=""
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@+id/mine_other_coll_sub"
+	        android:layout_marginRight="10dip"
+	        android:id="@+id/mine_other_coll_count"
+	        />
+	    
+	  	<ImageView 
+	  	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:src="@drawable/mm_submenu_normal"
+	        android:layout_centerVertical="true"
+	        android:id="@+id/mine_other_coll_sub"
+	  	    />
+	</RelativeLayout>
+    	 
+    	 
+   <!--  
+    <ImageView android:background="@drawable/card_splitline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+	<LinearLayout android:layout_marginTop="10dp"
+	    android:orientation="vertical" 
+	    android:id="@+id/qzone_weibo_mail_detail" 
+	    android:background="@drawable/card_container_bg" 
+	    android:focusable="true" 
+	    android:focusableInTouchMode="true" 
+	    android:clickable="true" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="56.0dip" 
+	    android:layout_marginLeft="8.0dip" 
+	    android:layout_marginRight="8.0dip" 
+	    android:layout_marginBottom="8.0dip">
+	 <LinearLayout android:orientation="horizontal"
+	      android:paddingTop="1.0px" 
+	      android:clickable="false" 
+	      android:layout_width="fill_parent" 
+	      android:layout_height="fill_parent">
+        
+        <LinearLayout 
+            android:gravity="center" 
+            android:orientation="vertical" 
+            android:id="@+id/mail" 
+            android:background="@drawable/twenty_trans_mask" 
+            android:layout_width="0.0px" 
+            android:layout_height="fill_parent" 
+            android:layout_weight="1.0">
+            <ImageView android:id="@+id/mail_image" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:src="@drawable/more_weibo" />
+            <TextView android:textSize="@dimen/font_size_extra_small" android:textColor="@color/color_cihei" android:gravity="center" android:id="@+id/mail_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="粉丝" />
+        </LinearLayout>
+        
+        <View android:id="@+id/divider_qzone" android:background="@drawable/card_container_splitline_vertical" android:layout_width="2.0px" android:layout_height="fill_parent" />
+        
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/qzone" android:background="@drawable/twenty_trans_mask" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/qzone_image" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:src="@drawable/more_weibo" />
+            <TextView android:textSize="@dimen/font_size_extra_small" android:textColor="@color/color_cihei" android:gravity="center" android:id="@+id/qzone_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注" />
+        </LinearLayout>
+    </LinearLayout>
+
+	</LinearLayout>
+	
+	
+	<RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="@drawable/set_top"
+		    android:layout_marginTop="2dp"
+		    android:gravity="center_vertical"
+		    android:focusable="true"
+		    android:id="@+id/set_network_layout"
+	    >
+	    <ImageView 
+	         android:layout_width="wrap_content"
+	       	 android:layout_height="wrap_content"
+	       	 android:id="@+id/set_network_icon"
+	       	 android:layout_alignParentLeft="true"
+	       	 android:paddingLeft="10dp"
+	       	 android:src="@drawable/more_weibo"
+	       	 android:layout_centerVertical="true"
+	        />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="我的发布"
+	        android:layout_toRightOf="@+id/set_network_icon"
+	        android:paddingLeft="5dp"
+	        android:textSize="16.0sp" 
+            android:textColor="@color/black"
+	        android:layout_centerVertical="true"     
+	         />
+	  	<ImageView 
+	  	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:paddingRight="10dp"
+	        android:src="@drawable/mm_submenu_normal"
+	        android:layout_centerVertical="true"
+	  	    />
+	</RelativeLayout>
+	
+	<RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="@drawable/set_middle"
+		    android:gravity="center_vertical"
+		    android:focusable="true"
+		    android:id="@+id/set_network_layout"
+	    >
+	    <ImageView 
+	         android:layout_width="wrap_content"
+	       	 android:layout_height="wrap_content"
+	       	 android:id="@+id/set_network_icon"
+	       	 android:layout_alignParentLeft="true"
+	       	 android:paddingLeft="10dp"
+	       	 android:src="@drawable/more_weibo"
+	       	 android:layout_centerVertical="true"
+	        />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="我的收藏"
+	        android:layout_toRightOf="@+id/set_network_icon"
+	        android:paddingLeft="5dp"
+	        android:textSize="16.0sp" 
+            android:textColor="@color/black"
+	        android:layout_centerVertical="true"     
+	         />
+	  	<ImageView 
+	  	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:paddingRight="10dp"
+	        android:src="@drawable/mm_submenu_normal"
+	        android:layout_centerVertical="true"
+	  	    />
+	</RelativeLayout>
+    	
+	<RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="@drawable/set_middle"
+		    android:gravity="center_vertical"
+		    android:focusable="true"
+		    android:id="@+id/set_network_layout"
+	    >
+	    <ImageView 
+	         android:layout_width="wrap_content"
+	       	 android:layout_height="wrap_content"
+	       	 android:id="@+id/set_network_icon"
+	       	 android:layout_alignParentLeft="true"
+	       	 android:paddingLeft="10dp"
+	       	 android:src="@drawable/more_weibo"
+	       	 android:layout_centerVertical="true"
+	        />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="我的评论"
+	        android:layout_toRightOf="@+id/set_network_icon"
+	        android:paddingLeft="5dp"
+	        android:textSize="16.0sp" 
+            android:textColor="@color/black"
+	        android:layout_centerVertical="true"     
+	         />
+	  	<ImageView 
+	  	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:paddingRight="10dp"
+	        android:src="@drawable/mm_submenu_normal"
+	        android:layout_centerVertical="true"
+	  	    />
+	</RelativeLayout>
+	
+	<RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="@drawable/set_bottom"
+		    android:gravity="center_vertical"
+		    android:focusable="true"
+		    android:id="@+id/set_network_layout"
+		    android:layout_marginBottom="20dp"
+	    >
+	    <ImageView 
+	         android:layout_width="wrap_content"
+	       	 android:layout_height="wrap_content"
+	       	 android:id="@+id/set_network_icon"
+	       	 android:layout_alignParentLeft="true"
+	       	 android:paddingLeft="10dp"
+	       	 android:src="@drawable/more_weibo"
+	       	 android:layout_centerVertical="true"
+	        />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="我的私信"
+	        android:layout_toRightOf="@+id/set_network_icon"
+	        android:paddingLeft="5dp"
+	        android:textSize="16.0sp" 
+            android:textColor="@color/black"
+	        android:layout_centerVertical="true"     
+	         />
+	  	<ImageView 
+	  	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:paddingRight="10dp"
+	        android:src="@drawable/mm_submenu_normal"
+	        android:layout_centerVertical="true"
+	  	    />
+	</RelativeLayout>
+	
+	-->
+	
+	
+	 
+	 
+	 
+	 <!--  
+	 	 <ImageView android:background="@drawable/card_splitline" android:layout_width="fill_parent" android:layout_height="wrap_content"  android:layout_marginBottom="10.0dip" />
+	 
+	 <LinearLayout android:layout_marginTop="10dp"
+	    android:orientation="vertical" android:id="@+id/qzone_weibo_mail_detail" android:background="@drawable/card_photowall_bg" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="0.0dip">
+	 <LinearLayout android:orientation="horizontal"
+	      android:paddingTop="1.0px" 
+	      android:clickable="false" 
+	      android:layout_width="fill_parent" 
+	      android:layout_height="fill_parent">
+        
+        <LinearLayout 
+            android:gravity="center" 
+            android:orientation="vertical" 
+            android:id="@+id/mail" 
+            android:background="@drawable/twenty_trans_mask" 
+            android:layout_width="0.0px" 
+            android:layout_height="fill_parent" 
+            android:layout_weight="1.0">
+            <ImageView android:id="@+id/mail_image" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:src="@drawable/more_weibo" />
+            <TextView android:textSize="@dimen/font_size_extra_small" android:textColor="@color/color_cihei" android:gravity="center" android:id="@+id/mail_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="粉丝" />
+        </LinearLayout>
+        
+        <View android:id="@+id/divider_qzone" android:background="@drawable/card_container_splitline_vertical" android:layout_width="2.0px" android:layout_height="fill_parent" />
+        
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/qzone" android:background="@drawable/twenty_trans_mask" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/qzone_image" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:src="@drawable/more_weibo" />
+            <TextView android:textSize="@dimen/font_size_extra_small" android:textColor="@color/color_cihei" android:gravity="center" android:id="@+id/qzone_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注" />
+        </LinearLayout>
+        
+    </LinearLayout>
+	</LinearLayout>
+	
+	 
+	 
+	 <LinearLayout android:layout_marginTop="-1dp"
+	    android:orientation="vertical" android:id="@+id/qzone_weibo_mail_detail" android:background="@drawable/card_container_bg" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip">
+	 <LinearLayout android:orientation="horizontal"
+	      android:paddingTop="1.0px" 
+	      android:clickable="false" 
+	      android:layout_width="fill_parent" 
+	      android:layout_height="fill_parent">
+        
+        <LinearLayout 
+            android:gravity="center" 
+            android:orientation="vertical" 
+            android:id="@+id/mail" 
+            android:background="@drawable/twenty_trans_mask" 
+            android:layout_width="0.0px" 
+            android:layout_height="fill_parent" 
+            android:layout_weight="1.0">
+            <ImageView android:id="@+id/mail_image" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:src="@drawable/more_weibo" />
+            <TextView android:textSize="@dimen/font_size_extra_small" android:textColor="@color/color_cihei" android:gravity="center" android:id="@+id/mail_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="粉丝" />
+        </LinearLayout>
+        
+        <View android:id="@+id/divider_qzone" android:background="@drawable/card_container_splitline_vertical" android:layout_width="2.0px" android:layout_height="fill_parent" />
+        
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/qzone" android:background="@drawable/twenty_trans_mask" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/qzone_image" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:src="@drawable/more_weibo" />
+            <TextView android:textSize="@dimen/font_size_extra_small" android:textColor="@color/color_cihei" android:gravity="center" android:id="@+id/qzone_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注" />
+        </LinearLayout>
+    </LinearLayout>
+	</LinearLayout>
+	 -->
+	 
+    	</LinearLayout>
+</com.zxtd.information.ui.custview.CustomerScrollView >
+
+    	
+    <!--  	
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/mine_bottom_layout"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/mine_other_optbottomlayout"
+    android:padding="10dip"
+    android:gravity="center_vertical"
+    >
+	    
+    <Button 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:background="@drawable/mine_other_bottom_botton"
+        android:layout_weight="1"
+        android:text="写私信"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/mine_other_btn_write"
+        />
+    
+     <Button 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:background="@drawable/mine_other_bottom_botton"
+        android:layout_weight="1"
+        android:text="加关注"
+        android:layout_marginLeft="20dip"
+        android:id="@+id/mine_other_btn_add"
+        />
+    
+</LinearLayout> 
+-->
+
+
+</RelativeLayout>   	
+    	
+</LinearLayout>

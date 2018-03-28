@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/new_post_bg" >
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/post_edit_bg"
+            android:layout_marginLeft="@dimen/new_list_item_pad14"
+            android:layout_marginRight="@dimen/new_list_item_pad14"
+            android:layout_marginTop="@dimen/new_list_item_pad5"
+            android:layout_marginBottom="@dimen/new_list_item_pad5"
+            android:gravity="center_vertical">
+
+			<LinearLayout 
+			    android:layout_width="0px"
+			    android:layout_height="0px"
+			    android:focusable="true"
+			    android:focusableInTouchMode="true">
+			    
+			</LinearLayout>
+            <EditText
+                android:id="@+id/new_edit_post"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:textSize="@dimen/text_size_20"
+                android:textColor="#ff000000"
+                android:hint="我来说几句"
+                android:minHeight="30dip"
+                android:maxHeight="70dip"
+                android:layout_marginLeft="@dimen/new_info_pad10">
+            </EditText>
+
+        </LinearLayout>
+		<Button
+            android:id="@+id/new_btn_post"
+            android:layout_width="wrap_content"
+            android:layout_height="34dip"
+            android:background="@drawable/btn_selector"
+            android:text="发送"
+            android:textSize="@dimen/text_size_22"
+            android:layout_marginRight="@dimen/new_info_pad10"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+</LinearLayout>

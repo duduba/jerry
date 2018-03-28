@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+     >
+	
+    <RelativeLayout 
+         android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content"
+        >
+        
+        <!-- 左边 -->
+      <LinearLayout 
+         android:layout_width="fill_parent"
+    	 android:layout_height="fill_parent"
+    	 android:orientation="vertical"
+    	 android:layout_toLeftOf="@+id/public_list_right"
+        >
+    <TextView 
+         android:layout_width="fill_parent"
+   		 android:layout_height="wrap_content"
+   		 style="@style/mine_list_title"
+   		 android:id="@+id/mine_public_list_title"
+   		 android:layout_marginLeft="10dip"
+   		 android:layout_marginRight="0dip"
+   		 android:layout_marginTop="6dip"
+   		 android:singleLine="true"
+        />
+    
+        <TextView 
+           android:layout_width="fill_parent"
+   	 	   android:layout_height="wrap_content"
+   	 	   style="@style/mine_list_content"
+   	 	   android:id="@+id/mine_public_list_content"
+   	 	   android:layout_marginTop="5dip"
+   	 	   android:layout_marginLeft="10dip"
+   		   android:layout_marginRight="0dip"
+   		   android:lineSpacingExtra="4dip"
+         />
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		android:layout_marginLeft="10dip"
+   		android:layout_marginRight="0dip"
+   		android:layout_marginTop="4dip"
+   		android:layout_marginBottom="6dip"
+        >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:orientation="horizontal"
+   			android:layout_alignParentLeft="true"
+   			android:layout_centerVertical="true"
+   			android:gravity="center_vertical"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+   				android:layout_height="wrap_content"
+   				android:text="栏目:"
+   				style="@style/mine_list_content"
+                />
+            
+            <TextView 
+                android:layout_width="wrap_content"
+   				android:layout_height="wrap_content"
+   				android:id="@+id/mine_public_list_channel"
+   				android:layout_marginLeft="3dip"
+   				style="@style/mine_list_content"
+                />
+            
+             <TextView 
+                android:layout_width="wrap_content"
+   				android:layout_height="wrap_content"
+   				android:id="@+id/mine_public_list_time"
+   				android:layout_marginLeft="10dip"
+   				style="@style/mine_list_content"
+                />
+            
+        </LinearLayout>
+  
+    </RelativeLayout>
+    </LinearLayout>
+    
+            <!-- 右边 -->
+         <LinearLayout 
+            android:layout_width="wrap_content"
+   			android:layout_height="fill_parent"
+   			android:layout_alignParentRight="true"
+   			android:orientation="vertical"
+   			android:layout_centerVertical="true"
+   			android:gravity="bottom"
+   			android:layout_marginRight="5dip"
+   			android:layout_marginTop="20dip"
+   			android:id="@+id/public_list_right"
+            >
+    			<ImageView 
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	        	  android:layout_marginLeft="5dp" 
+	        	  android:src="@drawable/redpoint"
+	        	  android:id="@+id/public_list_newreply"
+	            />           
+             
+    			<LinearLayout 
+    			     android:layout_width="wrap_content"
+   					 android:layout_height="fill_parent"
+   					 android:orientation="horizontal"
+   					 android:layout_gravity="bottom"
+   					 android:gravity="bottom"
+   					 android:layout_marginTop="10dip"
+    			    >
+    			     	 <TextView 
+			                android:layout_width="wrap_content"
+			   				android:layout_height="wrap_content"
+			   				android:id="@+id/mine_public_list_replayCount"
+			   				android:layout_marginRight="5dip"
+			   				style="@style/mine_list_content"
+			   				android:layout_gravity="center"
+			   				android:gravity="center"
+			   				android:text="0"
+		                />
+            	 
+		            	 <ImageView 
+		            	      android:layout_width="wrap_content"
+			   				  android:layout_height="wrap_content"
+			   				  android:id="@+id/mine_public_list_replayicon"
+			   				  android:src="@drawable/icon_comment"
+			   				  android:layout_gravity="bottom"
+			   				  android:gravity="bottom"
+		            	  />
+    			</LinearLayout>
+           
+
+        </LinearLayout>
+            
+         <!--    
+        <ImageView 
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"
+            android:layout_centerVertical="true"
+            android:src="@drawable/newprivatedetails_arrow_down"
+            android:id="@+id/item_updown"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            />
+        -->
+        
+        
+    </RelativeLayout>
+    
+
+    
+    
+    
+    
+    <!-- 操作 -->
+     <LinearLayout
+        android:id="@+id/layout_other"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:id="@+id/item_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/mine_item_background"
+            android:clickable="false"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/mine_item_view"
+                android:gravity="right|center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="查看"
+                android:textColor="#1c1c1c"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:background="@drawable/mine_item_background"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/mine_item_edit"
+                android:gravity="right|center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="编辑"
+                android:textColor="#1c1c1c"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+          <LinearLayout
+            android:id="@+id/item_delete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:background="@drawable/mine_item_background"
+            android:orientation="vertical" 
+            android:layout_marginRight="-3dip"
+            >
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/mine_item_delete"
+                android:gravity="right|center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="删除"
+                android:textColor="#1c1c1c"
+                android:textSize="14sp" />
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+</LinearLayout>

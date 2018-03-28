@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/net_friend_type_bg"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/new_net_friend_type_title_h"
+        android:text="精品专区"
+        android:textColor="#2b2b2b"
+        android:textSize="@dimen/text_size_24"
+        android:layout_marginLeft="@dimen/pad_20"
+        android:layout_marginRight="@dimen/pad_10"
+        android:gravity="center_vertical" />
+    <ImageView 
+        android:layout_width="@dimen/new_net_friend_type_icon_w"
+        android:layout_height="@dimen/new_net_friend_type_icon_h"
+        android:src="@drawable/net_friend_more"/>
+    
+</LinearLayout>

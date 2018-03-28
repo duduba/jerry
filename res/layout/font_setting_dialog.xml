@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/font_setting_dialog_linearlayout_h"
+        android:background="@drawable/font_setting_title"
+        android:gravity="center"
+        android:text="字体设置"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size_26" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/font_setting_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/setting_info_textview76_h"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/pad_40"
+                android:text="大号字体"
+                android:textColor="#5b5a5a"
+                android:textSize="@dimen/text_size_24" />
+			<RadioButton 
+			    android:id="@+id/large_font_id"
+			    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/pad_18"
+                android:background="@drawable/check_box_selector"
+                android:button="@drawable/transparent_color" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/setting_info_textview2_h"
+            android:background="@drawable/nick_name_list_divider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/setting_info_textview76_h"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/pad_40"
+                android:text="中号字体"
+                android:textColor="#5b5a5a"
+                android:textSize="@dimen/text_size_24" />
+
+            <RadioButton
+                android:id="@+id/middle_font_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/pad_18"
+                android:background="@drawable/check_box_selector"
+                android:button="@drawable/transparent_color"
+                android:checked="true" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/setting_info_textview2_h"
+            android:background="@drawable/nick_name_list_divider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/setting_info_textview76_h"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/pad_40"
+                android:text="小号字体"
+                android:textColor="#5b5a5a"
+                android:textSize="@dimen/text_size_24" />
+
+            <RadioButton
+                android:id="@+id/small_font_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/pad_18"
+                android:background="@drawable/check_box_selector"
+                android:button="@drawable/transparent_color"
+                android:checked="false" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/setting_info_textview2_h"
+            android:background="@drawable/nick_name_list_divider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/font_setting_dialog_linearlayout_h_82"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/font_setting_cancel"
+                android:layout_width="0dip"
+                android:layout_height="37dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/pad_12"
+                android:layout_weight="1"
+                android:background="@drawable/font_setting_button_selector"
+                android:text="取消"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_24" />
+
+            <Button
+                android:id="@+id/font_setting_confirm"
+                android:layout_width="0dip"
+                android:layout_height="37dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/pad_12"
+                android:layout_marginRight="@dimen/pad_12"
+                android:layout_weight="1"
+                android:background="@drawable/font_setting_button_selector"
+                android:text="确认"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_24" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

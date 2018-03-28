@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+
+    <ImageView
+        android:id="@+id/share_item_icon"
+        android:layout_width="46dip"
+        android:layout_height="46dip"
+        android:src="@drawable/renren_icon" />
+
+    <TextView
+        android:layout_marginTop="10dip"
+        android:id="@+id/share_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人人网"
+        android:textColor="#5b5a5a"
+        android:textSize="14sp"/>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+     >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+        >
+    
+    <LinearLayout
+    	android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_marginLeft="10dip"
+	    android:layout_marginRight="10dip"
+	    android:layout_marginTop="5dip"
+	    android:layout_marginBottom="5dip"
+	    android:layout_toLeftOf="@+id/del"
+	 >
+     
+          <TextView 
+           android:layout_width="fill_parent"
+   	 	   android:layout_height="wrap_content"
+   	 	   style="@style/mine_list_title"
+   	 	   android:id="@+id/coll_title"
+         />
+          
+          <TextView 
+           android:layout_width="fill_parent"
+   	 	   android:layout_height="wrap_content"
+   	 	   style="@style/mine_list_content"
+   	 	   android:id="@+id/coll_remark"
+   	 	   android:layout_marginTop="5dip"
+   	 	   android:lineSpacingExtra="4dip"
+         />
+          
+        <RelativeLayout 
+             android:layout_width="fill_parent"
+   	 	     android:layout_height="wrap_content"
+   	 	     android:layout_marginBottom="5dip"
+   	 	     android:layout_marginTop="5dip"
+            >
+             <TextView 
+	           android:layout_width="wrap_content"
+	   	 	   android:layout_height="wrap_content"
+	   	 	   style="@style/mine_list_small"
+	   	 	   android:id="@+id/coll_replay"
+	   	 	   android:layout_toLeftOf="@+id/coll_replay_icon"
+	   	 	   android:layout_marginRight="5dip"
+	   	 	   android:layout_centerVertical="true"
+	         />
+             
+             <ImageView 
+                 android:layout_width="wrap_content"
+	   	 	   	 android:layout_height="wrap_content"
+	   	 	   	 android:src="@drawable/icon_comment"
+	   	 	   	 android:layout_alignParentRight="true"
+	   	 	   	 android:id="@+id/coll_replay_icon"
+	   	 	   	 android:layout_centerVertical="true"
+                 />
+        </RelativeLayout>
+        
+     </LinearLayout>
+    
+    	  <Button
+        android:id="@+id/del"
+        android:layout_width="60dip"
+        android:singleLine="true"
+        android:layout_height="wrap_content"       
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"    
+        android:textColor="#ffffff"
+        android:background="@drawable/btn_style_six_normal"
+        android:text="删除"
+        android:layout_marginRight="8dip"
+        android:layout_marginLeft="8dip"
+        android:visibility="gone"
+        android:clickable="true"
+         />
+    
+    </RelativeLayout>
+ 
+</LinearLayout>

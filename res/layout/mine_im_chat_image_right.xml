@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+    >
+    
+    <include 
+         layout="@layout/mine_chat_message_time" 
+        />
+    
+<RelativeLayout 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingLeft="10dp"
+	android:paddingRight="10dp"
+	android:paddingTop="10dp"
+	android:layout_gravity="bottom"
+	>
+	
+    	
+    	<ImageView 
+    	    android:layout_width="wrap_content"
+	  		android:layout_height="wrap_content"
+	  		android:layout_marginRight="3dp"
+	  		android:visibility="gone"
+	  		android:gravity="center"
+	  		android:id="@+id/im_image_send_error"
+	  		android:layout_toLeftOf="@+id/im_image_send_wait"
+	  		android:src="@drawable/im_send_error"
+    	    />
+		<ProgressBar
+	  		android:layout_width="wrap_content"
+	  		android:layout_height="wrap_content"
+	  		style="?android:attr/progressBarStyleSmall"
+	  		android:id="@+id/im_image_send_wait"
+	  		android:layout_toLeftOf="@+id/self_msg"
+	  		android:layout_centerInParent="true"
+	  		android:layout_marginRight="3dp"
+	  		android:visibility="gone"
+	  		android:gravity="center"
+  		/>
+   
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/chart_self_textview"
+    	android:layout_toLeftOf="@+id/self_icon"
+    	android:id="@+id/self_msg"
+    	android:gravity="bottom"
+    	android:orientation="horizontal"
+    	android:minWidth="90dip"
+        >
+            <com.zxtd.information.ui.custview.RoundAngleImageView 
+             android:layout_width="fill_parent"
+    		 android:layout_height="fill_parent"
+    		 android:background="@drawable/mine_im_image_bg"
+    		 android:layout_gravity="left"
+    		 android:scaleType="fitXY"
+    		 android:id="@+id/self_image"
+            />
+        
+    </LinearLayout>
+
+    <com.zxtd.information.ui.custview.RoundAngleImageView 
+        android:layout_width="40dip"
+    	android:layout_height="40dip"
+    	android:id="@+id/self_icon"
+    	android:layout_alignParentRight="true"
+    	android:scaleType="fitXY"
+    	android:layout_alignParentBottom="true"
+        />
+    
+	</RelativeLayout>
+	
+</LinearLayout>

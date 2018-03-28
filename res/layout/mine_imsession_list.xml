@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0F0F0"
+    android:descendantFocusability="blocksDescendants"
+     >
+     
+    <FrameLayout
+        android:id="@+id/icon_framelayout"
+         android:layout_width="55dip"
+         android:layout_height="65dip" 
+         android:layout_alignParentLeft="true"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="10dip"
+       
+         >
+        <RelativeLayout
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+        	android:layout_gravity="center_vertical"
+           >
+		 <com.zxtd.information.ui.custview.RoundAngleImageView
+			   android:layout_width="50dip"
+			   android:layout_height="50dip"
+			   android:src="@drawable/mine_user_logo"
+			   android:scaleType="fitXY"
+			   android:id="@+id/session_icon"
+			   
+	       />
+		</RelativeLayout>
+		
+        <RelativeLayout
+            android:id="@+id/cross_icon_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             >
+
+            <TextView
+                android:id="@+id/mine_im_noread"
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+               	android:padding="0dip"
+               	android:visibility="gone"
+                android:background="@drawable/noread"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                />
+        </RelativeLayout>
+    </FrameLayout>
+    
+    
+  		 
+    
+  		  <RelativeLayout 
+  		      android:layout_width="fill_parent"
+  		      android:layout_height="wrap_content"
+  		      android:layout_toRightOf="@+id/icon_framelayout"
+  		      android:layout_centerVertical="true"
+  		      >
+  		      <LinearLayout 
+	  		      android:layout_width="fill_parent"
+	  		      android:layout_height="wrap_content"
+	  		      android:orientation="vertical"
+	  		      android:layout_marginLeft="5dip"
+	  		      android:layout_marginRight="5dip"
+  		          android:layout_toLeftOf="@+id/mine_session_right_opt"
+  		      >
+  		      <RelativeLayout 
+  		          android:layout_width="fill_parent"
+  		      	  android:layout_height="wrap_content"
+  		          >
+  		          <TextView 
+  		                android:layout_width="fill_parent"
+  		      			android:layout_height="wrap_content"
+  		      			android:layout_toLeftOf="@+id/session_date"
+  		      			android:textColor="#6c6c6c"
+  		      			android:textSize="18sp"
+  		      			android:id="@+id/session_name"
+  		      			android:layout_marginRight="5dip"
+  		      			android:singleLine="true"
+  		              />
+  		          
+  		          <TextView 
+  		              android:layout_width="wrap_content"
+  		      		  android:layout_height="wrap_content"
+  		      		  android:layout_alignParentRight="true"
+  		      		  android:textSize="14sp"
+  		      		  android:textColor="#9c9c9c"
+  		      		  android:id="@+id/session_date"
+  		              />
+  		      </RelativeLayout>
+  		      
+  		      <TextView 
+  		        android:layout_width="fill_parent"
+  		      	android:layout_height="wrap_content"
+  		      	android:textSize="14sp"
+  		       android:textColor="#9c9c9c"
+  		        android:singleLine="true"
+  		        android:id="@+id/session_msg"
+  		        android:layout_marginTop="5dip"
+  		          />
+  		      
+  		  </LinearLayout>
+  		  
+  		  <LinearLayout 
+  		      android:layout_width="wrap_content"
+	  		  android:layout_height="wrap_content"
+	  		  android:layout_alignParentRight="true"
+	  		  android:layout_centerVertical="true"
+	  		  android:layout_marginRight="8dip"
+	  		  android:layout_marginLeft="8dip"
+	  		  android:id="@+id/mine_session_right_opt"
+	  		  android:orientation="horizontal"
+  		      >
+  		      
+  		       <CheckBox
+	  		      android:layout_marginRight="-1dip"
+	  		      android:id="@+id/mine_session_chk_delete"
+	  		      style="@style/MyCheckBox"
+	  		      android:layout_gravity="center"
+	  		      android:gravity="center"
+	  		      android:visibility="gone"
+  		          />
+  		       
+  		      <ImageView 
+	  		      android:layout_width="wrap_content"
+	  		      android:layout_height="wrap_content"
+	  		      android:src="@drawable/arrow_right"
+	  		      android:id="@+id/arrow_right"
+	  		      android:layout_gravity="center"
+	  		      android:gravity="center"
+  		      />
+  		      
+  		  </LinearLayout>    
+  		 
+  		      
+  		  </RelativeLayout>
+  		  
+     </RelativeLayout>

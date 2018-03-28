@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+	<include layout="@layout/title_bar"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/new_type_bg"
+          >
+
+        <com.zxtd.information.view.TabPageIndicator
+            android:id="@+id/new_type_list"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="@dimen/new_type_list_height"
+            android:paddingLeft="@dimen/new_type_list_pad"
+            android:paddingTop="@dimen/new_type_list_pad"
+            android:paddingBottom="@dimen/new_type_list_pad"
+            android:cacheColorHint="#00000000"
+            >
+        </com.zxtd.information.view.TabPageIndicator>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/more"
+            android:layout_marginRight="@dimen/new_type_list_pad"
+            android:layout_marginLeft="@dimen/new_type_list_pad" />
+
+    </LinearLayout>
+
+   
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.zxtd.information.view.NewListViewPager
+            android:id="@+id/new_view_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            
+        </com.zxtd.information.view.NewListViewPager>
+        <include layout="@layout/zxtd_loading_view"/>
+         <include layout="@layout/error"/>
+    </FrameLayout>
+
+</LinearLayout>

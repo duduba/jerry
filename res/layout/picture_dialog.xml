@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/pad_20"
+    android:paddingRight="@dimen/pad_20" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/picture_dialog_textview_h"
+        android:text="获取路径"
+        android:textSize="@dimen/text_size_26"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:background="@drawable/pub_dialog_title" />
+
+    <ListView
+        android:id="@+id/get_picture_method"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/nick_name_list_divider"
+        android:dividerHeight="1.3dip"
+        android:background="@drawable/pub_dialog_body" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/setting_info_textview2_h"
+        android:background="@drawable/nick_name_list_divider" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f0"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview_h"
+                android:background="@drawable/setting_bg_type"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/new_list_item_pad14"
+                android:text="账户"
+                android:textColor="#5b5a5a"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                android:id="@+id/setting_login_out"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview76_h"
+                android:background="@drawable/setting_text_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/pad_40"
+                android:text="注销账户"
+                android:textColor="#2d2d2d"
+                android:textSize="@dimen/text_size_24"
+                android:visibility="gone" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview2_h"
+                android:background="@drawable/nick_name_list_divider" />
+
+            <TextView
+                android:id="@+id/setting_bind_user"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview76_h"
+                android:background="@drawable/setting_text_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/pad_40"
+                android:text="第三方账户绑定"
+                android:textColor="#2d2d2d"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview2_h"
+                android:background="@drawable/nick_name_list_divider" />
+
+            <TextView
+                android:id="@+id/setting_search_user"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview76_h"
+                android:background="@drawable/setting_text_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/pad_40"
+                android:text="搜索用户"
+                android:textColor="#2d2d2d"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview_h"
+                android:background="@drawable/setting_bg_type"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/new_list_item_pad14"
+                android:text="新消息提醒"
+                android:textColor="#5b5a5a"
+                android:textSize="@dimen/text_size_24"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview2_h"
+                android:background="@drawable/nick_name_list_divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview76_h"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/setting_text_selector"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/pad_40"
+                    android:text="声音"
+                    android:textColor="#2d2d2d"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/sound_onoff_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="24dip"
+                    android:gravity="center_vertical"
+                    android:text="当前：开启"
+                    android:textColor="#aeaeae"
+                    android:textSize="@dimen/text_size_20" />
+
+                <CheckBox
+                    android:id="@+id/check_no_sound_onoff_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/new_list_item_pad14"
+                    android:background="@drawable/check_box_selector"
+                    android:button="@drawable/transparent_color"
+                    android:checked="true" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview2_h"
+                android:background="@drawable/nick_name_list_divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview76_h"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/setting_text_selector"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/pad_40"
+                    android:text="震动"
+                    android:textColor="#2d2d2d"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/shock_onoff_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="24dip"
+                    android:gravity="center_vertical"
+                    android:text="当前：关闭"
+                    android:textColor="#aeaeae"
+                    android:textSize="@dimen/text_size_20" />
+
+                <CheckBox
+                    android:id="@+id/check_no_shock_onoff_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/new_list_item_pad14"
+                    android:background="@drawable/check_box_selector"
+                    android:button="@drawable/transparent_color"
+                    android:checked="false" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview2_h"
+                android:background="@drawable/nick_name_list_divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview76_h"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/setting_text_selector"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/pad_40"
+                    android:text="私信"
+                    android:textColor="#2d2d2d"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/private_letter_onoff_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="24dip"
+                    android:gravity="center_vertical"
+                    android:text="当前：关闭"
+                    android:textColor="#aeaeae"
+                    android:textSize="@dimen/text_size_20" />
+
+                <CheckBox
+                    android:id="@+id/check_no_private_letter_onoff_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/new_list_item_pad14"
+                    android:background="@drawable/check_box_selector"
+                    android:button="@drawable/transparent_color"
+                    android:checked="false" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview2_h"
+                android:background="@drawable/nick_name_list_divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview76_h"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/setting_text_selector"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/pad_40"
+                    android:text="新粉丝"
+                    android:textColor="#2d2d2d"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/fans_onoff_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="24dip"
+                    android:gravity="center_vertical"
+                    android:text="当前：关闭"
+                    android:textColor="#aeaeae"
+                    android:textSize="@dimen/text_size_20" />
+
+                <CheckBox
+                    android:id="@+id/check_no_fans_onoff_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/new_list_item_pad14"
+                    android:background="@drawable/check_box_selector"
+                    android:button="@drawable/transparent_color"
+                    android:checked="false" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview2_h"
+                android:background="@drawable/nick_name_list_divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview76_h"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/setting_text_selector"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/pad_40"
+                    android:text="新评论"
+                    android:textColor="#2d2d2d"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/comment_onoff_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="24dip"
+                    android:gravity="center_vertical"
+                    android:text="当前：关闭"
+                    android:textColor="#aeaeae"
+                    android:textSize="@dimen/text_size_20" />
+
+                <CheckBox
+                    android:id="@+id/check_no_comment_onoff_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/new_list_item_pad14"
+                    android:background="@drawable/check_box_selector"
+                    android:button="@drawable/transparent_color"
+                    android:checked="false" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview_h"
+                android:background="@drawable/setting_bg_type"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/new_list_item_pad14"
+                android:text="系统设置"
+                android:textColor="#5b5a5a"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview2_h"
+                android:background="@drawable/nick_name_list_divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_linearlayout_h"
+                android:background="#f0f0f0"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pad_12"
+                    android:layout_weight="1"
+                    android:background="#f0f0f0"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/pad_40"
+                        android:text="推送设置"
+                        android:textColor="#2d2d2d"
+                        android:textSize="@dimen/text_size_24" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/pad_40"
+                        android:layout_marginTop="@dimen/pad_6" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="开启或关闭推送，当前："
+                            android:textColor="#aeaeae"
+                            android:textSize="@dimen/text_size_20" />
+
+                        <TextView
+                            android:id="@+id/push_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="开启"
+                            android:textColor="#aeaeae"
+                            android:textSize="@dimen/text_size_20" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/check_push_onoff_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/new_list_item_pad14"
+                    android:background="@drawable/check_box_selector"
+                    android:button="@drawable/transparent_color"
+                    android:checked="true" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview2_h"
+                android:background="@drawable/nick_name_list_divider" />
+
+            <LinearLayout
+                android:id="@+id/font_setting_linearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_linearlayout_h"
+                android:background="@drawable/setting_text_selector" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pad_12"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/pad_40"
+                        android:text="字号设置"
+                        android:textColor="#2d2d2d"
+                        android:textSize="@dimen/text_size_24" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/pad_40"
+                        android:layout_marginTop="@dimen/pad_6" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="设置正文字体大小，当前大小："
+                            android:textColor="#aeaeae"
+                            android:textSize="@dimen/text_size_20" />
+
+                        <TextView
+                            android:id="@+id/setting_font_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="中号"
+                            android:textColor="#aeaeae"
+                            android:textSize="@dimen/text_size_20" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview2_h"
+                android:background="@drawable/nick_name_list_divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_linearlayout_h"
+                android:background="#f0f0f0"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pad_12"
+                    android:layout_weight="1"
+                    android:background="#f0f0f0"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/pad_40"
+                        android:text="无图模式"
+                        android:textColor="#2d2d2d"
+                        android:textSize="@dimen/text_size_24" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/pad_40"
+                        android:layout_marginTop="@dimen/pad_6" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="开启无图模式，省流量，当前："
+                            android:textColor="#aeaeae"
+                            android:textSize="@dimen/text_size_20" />
+
+                        <TextView
+                            android:id="@+id/setting_no_image_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="关闭"
+                            android:textColor="#aeaeae"
+                            android:textSize="@dimen/text_size_20" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/check_no_image_onoff_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/new_list_item_pad14"
+                    android:background="@drawable/check_box_selector"
+                    android:button="@drawable/transparent_color"
+                    android:checked="false" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview_h"
+                android:background="@drawable/setting_bg_type"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/new_list_item_pad14"
+                android:text="软件信息"
+                android:textColor="#5b5a5a"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview2_h"
+                android:background="@drawable/nick_name_list_divider" />
+
+            <TextView
+                android:id="@+id/setting_about_id"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview76_h"
+                android:background="@drawable/setting_text_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/pad_40"
+                android:text="关于"
+                android:textColor="#2d2d2d"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview2_h"
+                android:background="@drawable/nick_name_list_divider" />
+
+            <TextView
+                android:id="@+id/setting_feedback_id"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview76_h"
+                android:background="@drawable/setting_text_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/pad_40"
+                android:text="意见反馈"
+                android:textColor="#2d2d2d"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview2_h"
+                android:background="@drawable/nick_name_list_divider" />
+
+            <TextView
+                android:id="@+id/setting_check_update_id"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview76_h"
+                android:background="@drawable/setting_text_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/pad_40"
+                android:text="检查更新"
+                android:textColor="#2d2d2d"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview2_h"
+                android:background="@drawable/nick_name_list_divider" />
+
+            <TextView
+                android:id="@+id/setting_disclaimer_id"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview76_h"
+                android:background="@drawable/setting_text_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/pad_40"
+                android:text="免责声明"
+                android:textColor="#2d2d2d"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_info_textview2_h"
+                android:background="@drawable/nick_name_list_divider" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

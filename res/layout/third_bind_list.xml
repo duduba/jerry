@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="33dip"
+            android:layout_height="33dip"
+            android:layout_marginLeft="21dip"
+            android:src="@drawable/sina_icon" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:text="新浪微博"
+            android:textColor="#2d2d2d"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_sina_bind"
+            android:layout_width="68dip"
+            android:layout_height="30dip"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/btn_unbind_selector"
+            android:text="+绑定"
+            android:textColor="#5b5a5a"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/setting_info_textview2_h"
+        android:background="@drawable/nick_name_list_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="33dip"
+            android:layout_height="33dip"
+            android:layout_marginLeft="21dip"
+            android:src="@drawable/qq_weibo_icon" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:text="腾讯微博"
+            android:textColor="#2d2d2d"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_tencent_bind"
+            android:layout_width="68dip"
+            android:layout_height="30dip"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/btn_bind_selector"
+            android:text="取消绑定"
+            android:textColor="#5b5a5a"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/setting_info_textview2_h"
+        android:background="@drawable/nick_name_list_divider" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="33dip"
+            android:layout_height="33dip"
+            android:layout_marginLeft="21dip"
+            android:src="@drawable/renren_icon" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:text="人人网"
+            android:textColor="#2d2d2d"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_renn_bind"
+            android:layout_width="68dip"
+            android:layout_height="30dip"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/btn_unbind_selector"
+            android:text="+绑定"
+            android:textColor="#5b5a5a"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/setting_info_textview2_h"
+        android:background="@drawable/nick_name_list_divider" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="33dip"
+            android:layout_height="33dip"
+            android:layout_marginLeft="21dip"
+            android:src="@drawable/qq_kongjian_icon" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:text="QQ空间"
+            android:textColor="#2d2d2d"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_qq_bind"
+            android:layout_width="68dip"
+            android:layout_height="30dip"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/btn_unbind_selector"
+            android:text="+绑定"
+            android:textColor="#5b5a5a"
+            android:textSize="13sp" />
+    </LinearLayout>
+</LinearLayout>

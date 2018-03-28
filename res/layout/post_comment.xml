@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fff" >
+    <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/title_bar_height_x"
+                android:background="@drawable/title_bar" >
+
+                <Button
+                    android:id="@+id/btn_new_post_back"
+                    android:layout_width="40dip"
+		            android:layout_height="40dip"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="@dimen/new_list_item_pad14"
+		            android:background="@drawable/back_btn_selector"
+		            android:gravity="right|center_vertical"
+		            android:paddingRight="@dimen/new_info_pad10"
+		            android:textColor="#fff"
+		            android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/text_size_36"
+                    android:text="评论"/>
+
+                <Button
+                    android:id="@+id/btn_new_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/new_info_btn_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/new_list_item_pad14"
+                    android:background="@drawable/comment_btn_selector"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/pad_15"
+                    android:paddingRight="@dimen/pad_15"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/text_size_24"
+                    android:text="发表" />
+            </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:background="#f0f0f0"
+        android:layout_weight="1" >
+		<LinearLayout
+		    android:id="@+id/edit_hint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/pad_32"
+            android:paddingLeft="@dimen/pad_30"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/post_comment_imageview33_w"
+                android:layout_height="@dimen/post_comment_imageview32_h"
+                android:src="@drawable/post_edit_icon"/>
+			
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_20"
+                android:textColor="#ffaeaeae"
+                android:hint="我来说几句"
+                android:layout_marginLeft="@dimen/pad_10" />
+
+        </LinearLayout>
+        <LinearLayout 
+			    android:layout_width="0px"
+			    android:layout_height="0px"
+			    android:focusable="true"
+			    android:focusableInTouchMode="true">
+			    
+			</LinearLayout>
+        <EditText
+            android:id="@+id/new_post_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:gravity="top|left"
+            android:textColor="#ff2d2d2d"
+            android:textSize="@dimen/text_size_24"
+            android:padding="@dimen/new_list_item_pad14"
+            android:scrollbars="vertical"/>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<resources>
+
+    <string name="app_name">杂色</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string name="my_home">个人主页</string>
+    <string name="new_title">杂色</string>
+    <string name="setting_title">设置</string>
+    <string name="pub_news">我来发布</string>
+    <string name="modif_user_info">修改用户资料</string>
+    <string name="modif_password">修改密码</string>
+    <string name="third_bind">第三方账号绑定</string>
+    <string name="mine_comment">我的评论</string>
+    <string name="new_share">分享</string>
+    
+    <string name="title_activity_main">MainActivity</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">载入20条</string>
+    <string name="button">按钮</string>
+    <string name="image">图片</string>
+<string name="feedback_text">请提出您的意见!帮助我们改进产品和服务。\n请留下您的联系方式，以便我们跟您取得联系。</string>
+    <string name="disclaimer_text1">1. 凡杂色客户端注明“来源：XXX”的作品，均转载自其它媒体，转载目的在于传递更多信息，并不代表杂色新闻赞同其观点和对其真实性负责。</string>
+    <string name="disclaimer_text2">2. 如因作品内容、版权和其它问题需要同杂色新闻联系的，请在相关作品刊发之日起30日内进行。本客户端中的内容著作权和署名权归原作者所有。若作者有版权声明或该内容从其他网站转载而附带有原所有站的版权声明者，其版权归属以附带声明为准。</string>
+    <string name="disclaimer_text3">3. 本客户端“网友发布”版块的内容来自注册用户所发表的文章。本客户端用户以任何形式上传、发布于本客户端的信息内容，为用户个人行为，如果第三方对该内容提出包括版权在内的异议，本客户端应核实第三方的权利请求，将该内容删除。本客户端对于用户发布的内容所引发的版权的异议、纠纷不承担任何责任。</string>
+    <string name="disclaimer_text4">4. 用户上传本客户端的原创信息内容视为许可本站以合理的方式使用。本客户端有权在本客户端范围内引用、发布、转载用户在本客户端“网友发布”版块发布的内容。</string>
+    <string name="disclaimer_text5">5. 用户在本网站上传的信息内容仅代表用户或作者个人观点，与本站立场无关。用户自行承担其上传的信息内容产生的一切法律责任。</string>
+    <string name="disclaimer_text6">6. 在本客户端“网友发布”版块发布内容时，请严格遵守《中华人民共和国版权法》，任何转载或转贴都应注明真实作者和真实出处。</string>
+    <string name="disclaimer_text7">7. 本客户端有权认定和删除提交者所提交的任何不符合国家法律、法规和政策的任何言论、文字和图片。</string>
+    
+    <string name="pub_news_note">图片和文字必须添加其中一项才能发布</string>
+    <string name="pub_news_title_dialog_msg">退出将丢失已经输入的内容，选择完成将保存这次操作。</string>
+    
+      <string name="attention">注意</string>
+    <string name="delete_all">是否要删除这条微博？</string>
+    <string name="ok">是</string>
+    <string name="cancel">否</string>
+    <string name="hello">Hello World, TextActivity!</string>
+    <string name="send">发送</string>
+    <string name="close">关闭</string>
+    <string name="share_dialog_title">新浪微博</string>
+    <string name="please_login">请登录！</string>
+    <string name="send_sucess">分享成功！</string>
+    <string name="send_failed">分享失败！</string>
+    <string name="del_pic">是否删除图片？</string>
+    
+    <string name="errcode_success">发送成功</string>
+	<string name="errcode_cancel">发送取消</string>
+	<string name="errcode_deny">发送被拒绝</string>
+	<string name="errcode_unknown">发送返回</string>
+    
+</resources>
